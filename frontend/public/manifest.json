@@ -1,0 +1,14 @@
+{
+  "short_name": "AaharNest",
+  "name": "AaharNest — Good Food. Fair Prices. Better Living.",
+  "icons": [
+    { "src": "favicon.ico", "sizes": "16x16 32x32 48x48", "type": "image/x-icon" },
+    { "src": "icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#174A35",
+  "background_color": "#F8F5EC"
+}

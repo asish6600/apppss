@@ -1,0 +1,47 @@
+/* ============================================
+   AaharNest — global component styles
+   (Keep this file lean — Tailwind handles most styles)
+   ============================================ */
+
+/* ---------- Glass-morphism utility (menu, buttons, chips) ---------- */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 1px 1px rgba(23, 74, 53, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.glass-pill:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(23, 74, 53, 0.18);
+  box-shadow: 0 4px 14px -6px rgba(23, 74, 53, 0.18);
+}
+.glass-pill:active {
+  transform: translateY(1px);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.5));
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px -12px rgba(23, 74, 53, 0.12);
+}
+
+.glass-panel {
+  background: rgba(248, 245, 236, 0.62);
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  border: 1px solid rgba(143, 175, 130, 0.28);
+}
+
+/* ---------- Playwright/debug wrappers (preserved from base) ---------- */
+[data-debug-wrapper="true"] {
+  display: contents !important;
+}
+[data-debug-wrapper="true"] > * {
+  margin: inherit;
+  padding: inherit;
+  gap: inherit;
+}

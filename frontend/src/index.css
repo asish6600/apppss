@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 45 40% 95%;      /* warm cream */
+        --foreground: 140 7% 15%;      /* charcoal */
+        --card: 0 0% 100%;
+        --card-foreground: 140 7% 15%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 140 7% 15%;
+        --primary: 152 52% 19%;        /* forest green */
+        --primary-foreground: 45 40% 97%;
+        --secondary: 97 24% 60%;       /* sage */
+        --secondary-foreground: 140 7% 15%;
+        --muted: 45 30% 90%;
+        --muted-foreground: 140 7% 38%;
+        --accent: 38 73% 50%;          /* amber */
+        --accent-foreground: 140 10% 12%;
+        --destructive: 0 72% 42%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 97 20% 80%;
+        --input: 97 18% 82%;
+        --ring: 152 52% 19%;
+        --radius: 0.75rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin: 0;
+        /* Safety net: no single over-wide element (a tab row, a table, a long
+           unbroken string) may drag the whole page into a sideways scroll on a
+           phone or tablet. Wide content scrolls inside its own container. */
+        overflow-x: hidden;
+        @apply bg-cream text-charcoal font-sans antialiased;
+    }
+    h1, h2, h3, h4 {
+        @apply font-serif;
+    }
+    ::selection {
+        background: #D99A22;
+        color: #252A27;
+    }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: #F8F5EC; }
+    ::-webkit-scrollbar-thumb { background: #8FAF82; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #174A35; }
+}
+
+/* Tricolour: Saffron -> White -> Green */
+.tricolour-text {
+    background: linear-gradient(90deg, #FF9933 0%, #f3f3f3 50%, #138808 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.tricolour-underline {
+    position: relative;
+}
+.tricolour-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #FF9933 0%, #ffffff 50%, #138808 100%);
+    background-size: 200% auto;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .tricolour-text, .tricolour-underline::after {
+        animation: tricolour-shift 6s linear infinite;
+    }
+}
+@keyframes tricolour-shift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+.grain {
+    background-image: radial-gradient(rgba(37,42,39,0.04) 1px, transparent 1px);
+    background-size: 4px 4px;
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+    [data-debug-wrapper="true"] > * {
+        margin: inherit;
+        padding: inherit;
+        gap: inherit;
+    }
+}

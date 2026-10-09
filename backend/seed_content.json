@@ -1,0 +1,1977 @@
+{
+  "pieces": [
+    {
+      "slug": "poha",
+      "kind": "recipe",
+      "title": "Poha",
+      "summary": "Rinsed flattened rice tempered with mustard, curry leaves and peanuts. A weekday breakfast that comes together in one pan.",
+      "category": "Breakfast",
+      "date": "10 October 2023",
+      "minutes": 20,
+      "image": "/images/dish-poha.webp",
+      "imageAlt": "A plate of yellow poha with peanuts and coriander",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "10 min",
+      "total": "20 min",
+      "servings": "2",
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 cups thick poha",
+        "1 small onion, sliced",
+        "1 green chilli, slit",
+        "1 tsp mustard seeds",
+        "8–10 curry leaves",
+        "1 tbsp peanuts",
+        "½ tsp turmeric",
+        "Salt, lemon, coriander",
+        "1 tsp oil"
+      ],
+      "steps": [
+        "Rinse the poha in a colander until just soft. Drain well so it does not turn mushy.",
+        "Heat oil. Add mustard, curry leaves and peanuts. When the mustard pops, add onion and chilli.",
+        "Stir in turmeric and salt, then the poha. Warm through for two minutes.",
+        "Finish with lemon and coriander. Serve straight away."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "280 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "6 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "46 g"
+        },
+        {
+          "label": "Fat",
+          "value": "8 g"
+        }
+      ],
+      "notes": "Add peas or grated carrot if you want more colour. Keep the oil to a teaspoon.",
+      "tags": [
+        "vegetarian",
+        "indian",
+        "breakfast",
+        "poha",
+        "easy"
+      ],
+      "popular": true,
+      "easy": true,
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Poha is the breakfast the AaharNest Kitchen comes back to when the morning is short. Flattened rice, a small tadka, and lemon — nothing else is required."
+        }
+      ]
+    },
+    {
+      "slug": "idli",
+      "kind": "recipe",
+      "title": "Steamed idli",
+      "summary": "Fermented rice and urad batter, steamed until soft. Serve with coconut chutney and sambar.",
+      "category": "Breakfast",
+      "date": "10 October 2023",
+      "minutes": 25,
+      "image": "/images/dish-idli.webp",
+      "imageAlt": "Idli with sambar and coconut chutney",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "15 min",
+      "total": "15 min + ferment",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "ingredients": [
+        "2 cups idli rice, soaked",
+        "½ cup urad dal, soaked",
+        "½ tsp fenugreek seeds, soaked with the dal",
+        "Salt",
+        "Oil for the moulds"
+      ],
+      "steps": [
+        "Grind the urad and fenugreek to a light, airy batter. Grind the rice to a slightly coarse batter. Mix, salt, and ferment overnight.",
+        "Stir the batter down gently. Do not beat the air out of it.",
+        "Grease idli moulds, fill them three-quarters, and steam 10–15 minutes.",
+        "Rest one minute, then unmould. Serve with chutney and sambar."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "150 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "5 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "30 g"
+        },
+        {
+          "label": "Fat",
+          "value": "1 g"
+        }
+      ],
+      "notes": "Per two idlis, without chutney. Batter that smells clean and looks risen is ready. Cold kitchens need a longer ferment.",
+      "tags": [
+        "vegetarian",
+        "indian",
+        "breakfast",
+        "idli",
+        "fermented"
+      ],
+      "popular": true,
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Idli is a complete breakfast: steamed, fermented, and easy to eat with a little chutney. The work is the night before."
+        }
+      ]
+    },
+    {
+      "slug": "besan-chilla",
+      "kind": "recipe",
+      "title": "Besan chilla",
+      "summary": "Chickpea batter with onion, tomato and cumin, cooked on a hot griddle.",
+      "category": "Breakfast",
+      "date": "10 October 2023",
+      "minutes": 20,
+      "image": "/images/dish-chilla.webp",
+      "imageAlt": "Besan chilla with lemon and coriander",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "10 min",
+      "total": "20 min",
+      "servings": "2",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 cup besan",
+        "¾ cup water, or enough for a pourable batter",
+        "1 small onion, finely chopped",
+        "1 small tomato, finely chopped",
+        "1 green chilli",
+        "½ tsp cumin",
+        "¼ tsp turmeric",
+        "Salt",
+        "1 tsp oil",
+        "Lemon and coriander, to serve"
+      ],
+      "steps": [
+        "Whisk besan, water, spices and salt until smooth. Stir in onion, tomato and chilli. Rest 5 minutes.",
+        "Heat a griddle and wipe it with a little oil.",
+        "Spread a ladle of batter thin. Cook until the edges lift, then turn and cook the other side.",
+        "Serve with lemon. Two chillas is breakfast. One is a snack."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "220 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "11 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "28 g"
+        },
+        {
+          "label": "Fat",
+          "value": "7 g"
+        }
+      ],
+      "notes": "If the batter sits, it thickens. Loosen it with a spoon of water.",
+      "tags": [
+        "vegetarian",
+        "indian",
+        "breakfast",
+        "high-protein",
+        "besan",
+        "gluten-free"
+      ],
+      "popular": true,
+      "easy": true,
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Besan chilla is high in protein, needs no ferment, and uses what is already in an Indian kitchen."
+        }
+      ]
+    },
+    {
+      "slug": "rava-upma",
+      "kind": "recipe",
+      "title": "Rava upma",
+      "summary": "Roasted semolina tempered with mustard, curry leaves, chilli and onion.",
+      "category": "Breakfast",
+      "date": "10 October 2023",
+      "minutes": 20,
+      "image": "/images/dish-upma.webp",
+      "imageAlt": "A bowl of rava upma",
+      "author": "AaharNest Editorial Team",
+      "prep": "5 min",
+      "cook": "15 min",
+      "total": "20 min",
+      "servings": "2",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 cup rava (semolina)",
+        "2 cups water",
+        "1 small onion",
+        "1 tsp mustard seeds",
+        "1 tsp split chana dal",
+        "1 green chilli",
+        "8 curry leaves",
+        "Salt",
+        "1 tsp oil or ghee",
+        "Lemon and coriander"
+      ],
+      "steps": [
+        "Dry-roast the rava on a low flame until it smells nutty. Set aside.",
+        "In the same pan, heat oil. Temper mustard, chana dal, chilli, curry leaves and onion.",
+        "Add water and salt. Bring to a boil.",
+        "Rain in the rava while stirring so it does not lump. Cook until thick. Finish with lemon."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "260 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "7 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "46 g"
+        },
+        {
+          "label": "Fat",
+          "value": "6 g"
+        }
+      ],
+      "notes": "Roasting the rava is what keeps upma from tasting raw. Do not skip it.",
+      "tags": [
+        "vegetarian",
+        "indian",
+        "breakfast",
+        "upma"
+      ],
+      "easy": true,
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "A pan of upma feeds two people before the day starts. Vegetables can go in with the onion."
+        }
+      ]
+    },
+    {
+      "slug": "daliya-upma",
+      "kind": "recipe",
+      "title": "Daliya upma",
+      "summary": "Broken wheat roasted until golden, then cooked with vegetables, turmeric and a small tadka.",
+      "category": "Breakfast",
+      "date": "10 October 2023",
+      "minutes": 25,
+      "image": "/images/dish-millet.webp",
+      "imageAlt": "A bowl of broken wheat upma",
+      "author": "AaharNest Editorial Team",
+      "prep": "5 min",
+      "cook": "20 min",
+      "total": "25 min",
+      "servings": "2",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 cup daliya (broken wheat)",
+        "2½ cups water",
+        "1 cup mixed vegetables",
+        "½ tsp mustard",
+        "¼ tsp turmeric",
+        "Salt",
+        "1 tsp oil",
+        "Curry leaves and a green chilli"
+      ],
+      "steps": [
+        "Roast the daliya until golden. Set aside.",
+        "Temper spices and cook the vegetables.",
+        "Add water, turmeric and salt. Bring to a boil, then simmer the daliya until soft and the water is absorbed."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "250 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "8 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "48 g"
+        },
+        {
+          "label": "Fibre",
+          "value": "7 g"
+        }
+      ],
+      "notes": "Daliya holds more water than rava. Keep the lid on for the last few minutes.",
+      "tags": [
+        "vegetarian",
+        "indian",
+        "breakfast",
+        "daliya",
+        "high-fibre"
+      ],
+      "easy": true,
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Broken wheat is slower than semolina and more filling. It suits a morning when lunch will be late."
+        }
+      ]
+    },
+    {
+      "slug": "muesli-yogurt",
+      "kind": "recipe",
+      "title": "Muesli with yogurt",
+      "summary": "Muesli, yogurt, banana, berries and apple. No cooking required.",
+      "category": "Breakfast",
+      "date": "10 October 2023",
+      "minutes": 10,
+      "image": "/images/dish-muesli.webp",
+      "imageAlt": "Muesli with yogurt and fruit",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "0 min",
+      "total": "10 min",
+      "servings": "1",
+      "difficulty": "Easy",
+      "ingredients": [
+        "½ cup unsweetened muesli",
+        "¾ cup plain yogurt",
+        "½ banana",
+        "A handful of berries",
+        "½ apple, chopped"
+      ],
+      "steps": [
+        "Spoon yogurt into a bowl.",
+        "Top with muesli and fruit.",
+        "Eat it cold. Do not add honey unless you want the extra sugar."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "290 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "12 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "42 g"
+        },
+        {
+          "label": "Fat",
+          "value": "8 g"
+        }
+      ],
+      "notes": "Check the muesli packet. Many mixes are already sweetened.",
+      "tags": [
+        "vegetarian",
+        "breakfast",
+        "no-cook",
+        "easy",
+        "yogurt"
+      ],
+      "easy": true,
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "This is the breakfast for a morning with no stove. Fruit does the sweetening."
+        }
+      ]
+    },
+    {
+      "slug": "methi-thepla",
+      "kind": "recipe",
+      "title": "Methi thepla",
+      "summary": "Wheat dough kneaded with fresh fenugreek, yogurt and spices, rolled thin and cooked on a griddle.",
+      "category": "Breakfast",
+      "date": "10 October 2023",
+      "minutes": 30,
+      "image": "/images/botanic.webp",
+      "imageAlt": "Fresh fenugreek leaves for thepla",
+      "author": "AaharNest Editorial Team",
+      "prep": "15 min",
+      "cook": "15 min",
+      "total": "30 min",
+      "servings": "3",
+      "difficulty": "Moderate",
+      "ingredients": [
+        "1½ cups whole-wheat flour",
+        "1 cup fresh methi, chopped",
+        "2 tbsp yogurt",
+        "½ tsp turmeric",
+        "½ tsp chilli powder",
+        "½ tsp cumin",
+        "Salt",
+        "1 tsp oil, plus a little for cooking"
+      ],
+      "steps": [
+        "Knead flour, methi, yogurt, spices, salt and oil with just enough water to make a soft dough. Rest 10 minutes.",
+        "Divide and roll thin.",
+        "Cook on a hot griddle, brushing a little oil, until both sides are spotted."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "180 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "6 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "30 g"
+        },
+        {
+          "label": "Fat",
+          "value": "5 g"
+        }
+      ],
+      "notes": "Per two theplas. They travel well and stay soft if wrapped in a cloth.",
+      "tags": [
+        "vegetarian",
+        "indian",
+        "breakfast",
+        "thepla",
+        "methi"
+      ],
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Thepla is a Gujarati breakfast that works as a packed lunch too. Fenugreek keeps it bitter in a good way."
+        }
+      ]
+    },
+    {
+      "slug": "sprout-salad",
+      "kind": "recipe",
+      "title": "Sprout salad",
+      "summary": "Mixed sprouts with cucumber, tomato and onion, finished with lemon and chaat masala.",
+      "category": "Snacks",
+      "date": "10 October 2023",
+      "minutes": 10,
+      "image": "/images/salad.webp",
+      "imageAlt": "A fresh sprout and vegetable salad",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "0 min",
+      "total": "10 min",
+      "servings": "2",
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 cups mixed sprouts",
+        "½ cucumber, chopped",
+        "1 tomato, chopped",
+        "1 small onion, chopped",
+        "Lemon juice",
+        "Chaat masala and salt",
+        "A few coriander leaves"
+      ],
+      "steps": [
+        "If the sprouts are very firm, steam them for three minutes and cool.",
+        "Toss with cucumber, tomato and onion.",
+        "Dress with lemon, chaat masala and salt. Add coriander."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "140 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "9 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "22 g"
+        },
+        {
+          "label": "Fibre",
+          "value": "6 g"
+        }
+      ],
+      "notes": "This is a snack or a side. It is not a full dinner on its own.",
+      "tags": [
+        "vegetarian",
+        "indian",
+        "snacks",
+        "high-protein",
+        "no-cook",
+        "salad"
+      ],
+      "easy": true,
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Sprouts are one of the simplest proteins in a vegetarian kitchen. Lemon and chaat masala do the seasoning."
+        }
+      ]
+    },
+    {
+      "slug": "chicken-cucumber-salad",
+      "kind": "recipe",
+      "title": "Chicken cucumber salad",
+      "summary": "Grilled chicken with cucumber, tomato and lime. Enough for lunch.",
+      "category": "Lunch",
+      "date": "1 November 2023",
+      "minutes": 20,
+      "image": "/images/dish-lunch.webp",
+      "imageAlt": "Grilled chicken salad with cucumber and tomato",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "10 min",
+      "total": "20 min",
+      "servings": "1",
+      "difficulty": "Easy",
+      "ingredients": [
+        "150 g grilled chicken, sliced",
+        "1 cucumber",
+        "1 tomato",
+        "A few lettuce leaves",
+        "A small carrot",
+        "A handful of sweetcorn, if you have it",
+        "Lime, salt, pepper",
+        "1 tsp olive oil"
+      ],
+      "steps": [
+        "Toss the vegetables with lime, salt and oil.",
+        "Lay the chicken on top. Add pepper.",
+        "Skip the sweet dressing. The lime is the dressing."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "280 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "32 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "10 g"
+        },
+        {
+          "label": "Fat",
+          "value": "12 g"
+        }
+      ],
+      "notes": "Grill the chicken plain. A marinade full of sugar undoes the plate.",
+      "tags": [
+        "lunch",
+        "high-protein",
+        "salad",
+        "chicken",
+        "weight-loss"
+      ],
+      "popular": true,
+      "easy": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "A lunch that stays light because the dressing is lime, not a creamy bottle. The chicken is the protein. The vegetables are the volume."
+        }
+      ]
+    },
+    {
+      "slug": "quinoa-bean-bowl",
+      "kind": "recipe",
+      "title": "Quinoa and black bean bowl",
+      "summary": "Quinoa, black beans, tomato and avocado in one bowl. A spoon of curd is enough.",
+      "category": "Lunch",
+      "date": "1 November 2023",
+      "minutes": 20,
+      "image": "/images/bowl.webp",
+      "imageAlt": "A quinoa bowl with beans and vegetables",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "10 min",
+      "total": "20 min",
+      "servings": "1",
+      "difficulty": "Easy",
+      "ingredients": [
+        "½ cup cooked quinoa",
+        "½ cup cooked black beans",
+        "1 tomato, chopped",
+        "¼ avocado",
+        "Lime, salt, coriander",
+        "1 spoon of curd",
+        "Optional: corn and red bell pepper"
+      ],
+      "steps": [
+        "Warm the quinoa and beans.",
+        "Top with tomato, avocado, lime, salt and coriander.",
+        "Add a spoon of curd. This is the meal, so you do not need bread with it."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "380 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "14 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "48 g"
+        },
+        {
+          "label": "Fat",
+          "value": "14 g"
+        }
+      ],
+      "notes": "Cook the quinoa in lightly salted water and drain well.",
+      "tags": [
+        "vegetarian",
+        "lunch",
+        "gluten-free",
+        "high-protein",
+        "bowl",
+        "weight-loss"
+      ],
+      "easy": true,
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "The bowl is the whole lunch: grain, beans, a little fat from avocado, and acid from lime."
+        }
+      ]
+    },
+    {
+      "slug": "lentil-soup",
+      "kind": "recipe",
+      "title": "Lentil soup",
+      "summary": "Red or green lentils simmered with onion, carrot, celery and warm spices.",
+      "category": "Dinner",
+      "date": "1 November 2023",
+      "minutes": 35,
+      "image": "/images/khichdi.webp",
+      "imageAlt": "A bowl of lentil soup",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "25 min",
+      "total": "35 min",
+      "servings": "3",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 cup red or green lentils, rinsed",
+        "1 onion, 1 carrot, 1 stalk celery",
+        "2 garlic cloves",
+        "4 cups vegetable broth or water",
+        "½ tsp cumin",
+        "½ tsp paprika",
+        "A pinch of thyme",
+        "1 tsp olive oil",
+        "Salt"
+      ],
+      "steps": [
+        "Sauté onion, carrot and celery in the oil until soft. Add garlic.",
+        "Add lentils, broth and spices.",
+        "Simmer until the lentils are tender. Red lentils collapse; green lentils stay whole.",
+        "Salt at the end. Serve as a light dinner."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "220 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "14 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "36 g"
+        },
+        {
+          "label": "Fibre",
+          "value": "8 g"
+        }
+      ],
+      "notes": "A small bowl is dinner. A large bowl plus bread is a heavier meal than this page intends.",
+      "tags": [
+        "vegetarian",
+        "dinner",
+        "lentils",
+        "soup",
+        "high-protein",
+        "gluten-free"
+      ],
+      "easy": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Lentil soup is one of the five lighter lunches from the original journal, and it works even better as an early dinner."
+        }
+      ]
+    },
+    {
+      "slug": "sabudana-khichdi",
+      "kind": "recipe",
+      "title": "Sabudana khichdi",
+      "summary": "Soaked sago with peanut and potato. Light enough for a quiet dinner, and a classic vrat plate.",
+      "category": "Dinner",
+      "date": "15 October 2023",
+      "minutes": 25,
+      "image": "/images/khichdi.webp",
+      "imageAlt": "Sabudana khichdi with peanuts and potato",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "15 min",
+      "total": "25 min + soak",
+      "servings": "2",
+      "difficulty": "Moderate",
+      "ingredients": [
+        "1 cup sabudana, rinsed and soaked 4 hours, then drained well",
+        "2 tbsp crushed roasted peanut",
+        "1 boiled potato, cubed",
+        "1 tsp ghee",
+        "Cumin",
+        "1 green chilli",
+        "Salt or sendha namak",
+        "Coriander"
+      ],
+      "steps": [
+        "The sabudana should be separate, not wet. Mix in peanut, salt and potato.",
+        "Heat ghee, add cumin and chilli, then the sabudana.",
+        "Stir on medium until the pearls turn clear.",
+        "Finish with coriander. A small bowl is dinner. A large one is heavy, so stop early."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "320 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "5 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "58 g"
+        },
+        {
+          "label": "Fat",
+          "value": "8 g"
+        }
+      ],
+      "notes": "For a Navratri fast, use sendha namak and skip regular table salt. Soak time matters more than the cooking.",
+      "tags": [
+        "vegetarian",
+        "indian",
+        "dinner",
+        "vrat",
+        "navratri",
+        "sabudana",
+        "gluten-free"
+      ],
+      "popular": true,
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Sabudana khichdi is in the kitchen both as a quiet dinner and as a Navratri plate. The pearls should look clear, not sticky."
+        }
+      ]
+    },
+    {
+      "slug": "ginger-turmeric-infusion",
+      "kind": "recipe",
+      "title": "Ginger turmeric infusion",
+      "summary": "A small cup of ginger, turmeric and lemon. A daily habit, not a medicine.",
+      "category": "Nutrition",
+      "date": "9 October 2023",
+      "minutes": 10,
+      "image": "/images/dish-ginger.webp",
+      "imageAlt": "Ginger and turmeric steeping in a cup",
+      "author": "AaharNest Editorial Team",
+      "prep": "2 min",
+      "cook": "5 min",
+      "total": "10 min",
+      "servings": "1",
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 slices fresh ginger",
+        "¼ tsp turmeric",
+        "1 cup water",
+        "A squeeze of lemon, after it cools a little"
+      ],
+      "steps": [
+        "Simmer ginger and turmeric in water for 5 minutes.",
+        "Strain. Add lemon off the boil so it stays bright.",
+        "One cup in the afternoon is enough. It does not replace a meal or a doctor."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "8 kcal"
+        },
+        {
+          "label": "Sugar",
+          "value": "0 g"
+        },
+        {
+          "label": "Caffeine",
+          "value": "None"
+        }
+      ],
+      "notes": "This is a drink, not a treatment. If you take medicine that interacts with turmeric, ask a clinician.",
+      "tags": [
+        "vegetarian",
+        "drink",
+        "ginger",
+        "turmeric",
+        "wellness",
+        "easy"
+      ],
+      "easy": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "AaharNest Wellness keeps this as a small afternoon cup. It is warming and simple. It is not a cure."
+        }
+      ]
+    },
+    {
+      "slug": "mango-mint-cooler",
+      "kind": "recipe",
+      "title": "Mango mint cooler",
+      "summary": "Ripe mango and mint, blended thick, with pomegranate on top. An afternoon snack, not a second meal.",
+      "category": "Snacks",
+      "date": "14 October 2023",
+      "minutes": 10,
+      "image": "/images/smoothie.webp",
+      "imageAlt": "A mango drink with mint",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "0 min",
+      "total": "10 min",
+      "servings": "1",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 ripe mango",
+        "6 mint leaves",
+        "½ cup cold water or thin curd",
+        "A spoon of pomegranate seeds"
+      ],
+      "steps": [
+        "Blend mango, mint and water until smooth. Add no sugar.",
+        "Pour into a glass. Top with pomegranate and a mint sprig.",
+        "Drink it as the afternoon snack, not with a meal on top."
+      ],
+      "nutrition": [
+        {
+          "label": "Energy",
+          "value": "160 kcal"
+        },
+        {
+          "label": "Protein",
+          "value": "2 g"
+        },
+        {
+          "label": "Carbs",
+          "value": "36 g"
+        },
+        {
+          "label": "Fat",
+          "value": "1 g"
+        }
+      ],
+      "notes": "Ripe mango is already sweet. Honey is not required.",
+      "tags": [
+        "vegetarian",
+        "snacks",
+        "smoothie",
+        "mango",
+        "no-cook",
+        "easy"
+      ],
+      "easy": true,
+      "popular": true,
+      "indian": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "From the kitchen snack notes. Mango, mint, and something sharp on top. Stop at one glass."
+        }
+      ]
+    },
+    {
+      "slug": "palak-paneer",
+      "kind": "recipe",
+      "title": "Palak Paneer",
+      "summary": "Spinach puréed with ginger-garlic, cumin and gentle spices, folded with pan-seared paneer cubes.",
+      "category": "Dinner",
+      "date": "20 October 2025",
+      "minutes": 30,
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "A bowl of palak paneer with cumin tempering",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "20 min",
+      "total": "30 min",
+      "servings": "3",
+      "difficulty": "Easy",
+      "ingredients": [
+        "250 g spinach, blanched",
+        "200 g paneer, cubed",
+        "1 onion, finely chopped",
+        "1 tomato, puréed",
+        "1 tbsp ginger-garlic paste",
+        "½ tsp cumin",
+        "½ tsp garam masala",
+        "1 tsp oil or ghee",
+        "Salt"
+      ],
+      "steps": [
+        "Blanch the spinach for 2 minutes and blend to a smooth purée.",
+        "Heat ghee, splutter cumin, cook onion until pink. Add ginger-garlic.",
+        "Add tomato purée and spices. Cook until the oil separates.",
+        "Fold in spinach purée, salt and paneer. Simmer for 3 minutes. Finish with garam masala."
+      ],
+      "nutrition": [
+        {"label": "Energy", "value": "220 kcal"},
+        {"label": "Protein", "value": "14 g"},
+        {"label": "Carbs", "value": "9 g"},
+        {"label": "Fat", "value": "14 g"}
+      ],
+      "notes": "Sear paneer cubes in a dry pan for 30 seconds a side so they hold shape in the gravy.",
+      "tags": ["vegetarian", "indian", "dinner", "paneer", "spinach"],
+      "popular": true,
+      "indian": true,
+      "sections": [{"type": "p", "text": "A weeknight favourite — green, warming and quick enough to make after work."}]
+    },
+    {
+      "slug": "masala-dosa",
+      "kind": "recipe",
+      "title": "Masala Dosa",
+      "summary": "Crisp fermented rice-and-urad crêpes stuffed with a cumin-mustard potato filling.",
+      "category": "Breakfast",
+      "date": "22 October 2025",
+      "minutes": 40,
+      "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "A golden masala dosa with coconut chutney",
+      "author": "AaharNest Editorial Team",
+      "prep": "15 min",
+      "cook": "25 min",
+      "total": "40 min + ferment",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "ingredients": [
+        "2 cups fermented dosa batter",
+        "3 potatoes, boiled and cubed",
+        "1 onion, sliced",
+        "1 tsp mustard seeds",
+        "1 tsp chana dal",
+        "1 green chilli, slit",
+        "8 curry leaves",
+        "¼ tsp turmeric",
+        "1 tsp oil",
+        "Salt, lemon, coriander"
+      ],
+      "steps": [
+        "Heat oil. Temper mustard, chana dal, chilli and curry leaves.",
+        "Add onion and sauté until soft. Stir in turmeric and salt.",
+        "Fold in potatoes. Mash lightly. Finish with lemon and coriander.",
+        "Spread a ladle of batter on a hot tawa in a thin circle. Cook until crisp.",
+        "Place a spoon of potato filling at the centre and fold. Serve with chutney."
+      ],
+      "nutrition": [
+        {"label": "Energy", "value": "320 kcal"},
+        {"label": "Protein", "value": "8 g"},
+        {"label": "Carbs", "value": "58 g"},
+        {"label": "Fat", "value": "6 g"}
+      ],
+      "notes": "A well-fermented batter is the real secret. The pan should be very hot before you pour.",
+      "tags": ["vegetarian", "indian", "breakfast", "dosa", "south-indian"],
+      "popular": true,
+      "indian": true,
+      "sections": [{"type": "p", "text": "The quintessential South Indian breakfast — crisp outside, soft inside, and endlessly satisfying."}]
+    },
+    {
+      "slug": "chole-bhature",
+      "kind": "recipe",
+      "title": "Chole with Chickpea Flour Bhature",
+      "summary": "Spicy Punjabi-style chickpeas with soft-centred, fried flatbreads. A Sunday plate.",
+      "category": "Lunch",
+      "date": "25 October 2025",
+      "minutes": 50,
+      "image": "https://images.unsplash.com/photo-1626132647523-66c6a1f4c058?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Chole bhature on a steel plate",
+      "author": "AaharNest Editorial Team",
+      "prep": "20 min",
+      "cook": "30 min",
+      "total": "50 min",
+      "servings": "3",
+      "difficulty": "Moderate",
+      "ingredients": [
+        "1½ cups chickpeas, soaked overnight",
+        "1 onion, chopped",
+        "2 tomatoes, puréed",
+        "1 tbsp chole masala",
+        "1 tsp ginger-garlic paste",
+        "1 bay leaf, 2 cloves, 1 cinnamon piece",
+        "2 cups whole-wheat flour",
+        "¼ cup yogurt",
+        "½ tsp baking soda",
+        "Oil for frying, salt"
+      ],
+      "steps": [
+        "Pressure cook the chickpeas with salt and a tea bag (for colour) for 20 minutes.",
+        "In a pan, sauté whole spices and onion. Add ginger-garlic, then tomato purée and chole masala.",
+        "Add chickpeas and simmer 15 minutes until the gravy clings.",
+        "Mix flour, yogurt, baking soda, salt and water into a soft dough. Rest 20 minutes.",
+        "Roll and deep-fry each bhatura in hot oil until puffed. Serve with chole and onion rings."
+      ],
+      "nutrition": [
+        {"label": "Energy", "value": "510 kcal"},
+        {"label": "Protein", "value": "18 g"},
+        {"label": "Carbs", "value": "70 g"},
+        {"label": "Fat", "value": "18 g"}
+      ],
+      "notes": "Weekend-indulgent, not a daily plate. Serve with sliced onion and a wedge of lemon.",
+      "tags": ["vegetarian", "indian", "lunch", "punjabi", "chickpeas"],
+      "popular": true,
+      "indian": true,
+      "sections": [{"type": "p", "text": "A Punjabi classic — rich, warming and worth the once-a-month treat."}]
+    },
+    {
+      "slug": "ragi-cookies",
+      "kind": "recipe",
+      "title": "Ragi Jaggery Cookies",
+      "summary": "Soft, lightly spiced cookies with finger millet, jaggery and a hint of cardamom.",
+      "category": "Snacks",
+      "date": "28 October 2025",
+      "minutes": 25,
+      "image": "https://images.unsplash.com/photo-1548365328-9f547fb09530?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "A stack of ragi jaggery cookies",
+      "author": "AaharNest Editorial Team",
+      "prep": "10 min",
+      "cook": "15 min",
+      "total": "25 min",
+      "servings": "12 cookies",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 cup ragi flour",
+        "½ cup whole-wheat flour",
+        "⅓ cup powdered jaggery",
+        "¼ cup ghee, soft",
+        "2 tbsp curd",
+        "¼ tsp cardamom powder",
+        "¼ tsp baking soda",
+        "Pinch of salt"
+      ],
+      "steps": [
+        "Preheat oven to 180°C.",
+        "Whisk ghee and jaggery until smooth. Add curd.",
+        "Fold in flours, cardamom, soda and salt. The dough should be soft, not sticky.",
+        "Shape small balls, flatten slightly and bake for 12–15 minutes.",
+        "Cool completely before storing — they crisp as they cool."
+      ],
+      "nutrition": [
+        {"label": "Energy", "value": "110 kcal / cookie"},
+        {"label": "Protein", "value": "2 g"},
+        {"label": "Carbs", "value": "14 g"},
+        {"label": "Fat", "value": "5 g"}
+      ],
+      "notes": "A better-for-you tea-time biscuit — ragi for fibre, jaggery for a mellow sweetness.",
+      "tags": ["vegetarian", "indian", "snacks", "ragi", "cookies", "jaggery"],
+      "easy": true,
+      "popular": true,
+      "indian": true,
+      "sections": [{"type": "p", "text": "A smarter dunk for your evening chai — ragi, jaggery and a short bake."}]
+    },
+    {
+      "slug": "start-with-water",
+      "kind": "article",
+      "title": "Start the day with water",
+      "summary": "One glass before tea or coffee. A small morning habit that makes the rest of the day easier to steer.",
+      "category": "Wellness",
+      "date": "1 October 2026",
+      "minutes": 3,
+      "image": "/images/tip-water.webp",
+      "imageAlt": "A glass of water and a lemon wedge on a linen table",
+      "author": "AaharNest Editorial Team",
+      "tags": [
+        "wellness",
+        "water",
+        "habit",
+        "daily",
+        "nutrition"
+      ],
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Most people reach for tea or coffee before they have had any water. AaharNest Wellness suggests reversing that. One ordinary glass, before the kettle, is enough to start."
+        },
+        {
+          "type": "h",
+          "text": "Why it helps an ordinary day"
+        },
+        {
+          "type": "p",
+          "text": "You notice thirst less when the morning is rushed. A first glass is a cue: the day has a shape, and food comes after water, not instead of it. It is not a detox and it will not fix a medical condition."
+        },
+        {
+          "type": "h",
+          "text": "Try this"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Keep a glass by the kettle or on the dining table the night before.",
+            "Drink it before chai, coffee or breakfast.",
+            "If plain water bores you, add a slice of lemon. Skip sugar and packaged drinks.",
+            "Through the day, aim to sip rather than gulp a litre at once. Heat and a walk mean you need more."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If a clinician has limited your fluids, follow that advice. Pale straw-coloured urine is a simple home check for everyone else."
+        }
+      ]
+    },
+    {
+      "slug": "half-plate-habit",
+      "kind": "article",
+      "title": "Fill half the plate with vegetables",
+      "summary": "The easiest way to eat well at lunch: vegetables first, then protein, then a modest grain.",
+      "category": "Nutrition",
+      "date": "1 October 2026",
+      "minutes": 4,
+      "image": "/images/tip-plate.webp",
+      "imageAlt": "A plate with vegetables, dal and a modest serving of rice",
+      "author": "AaharNest Editorial Team",
+      "tags": [
+        "nutrition",
+        "plate",
+        "habit",
+        "daily",
+        "lunch"
+      ],
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "You do not need a new diet name. You need a plate you can recognise at lunch. Half vegetables. A quarter protein — dal, curd, eggs, fish or chicken. A quarter grain — rice, roti or millet."
+        },
+        {
+          "type": "h",
+          "text": "Why it helps"
+        },
+        {
+          "type": "p",
+          "text": "Vegetables add volume, so the meal feels complete without a second helping of rice. Protein keeps you from hunting a fried snack at four. The grain stays, because a meal with no starch is a meal most families will not repeat."
+        },
+        {
+          "type": "h",
+          "text": "Try this"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Put the salad, sabzi or cucumber on the plate before you serve rice.",
+            "Keep the rice or roti to about a fist. Add another spoon of dal if you are still hungry, not another mound of rice.",
+            "At a restaurant, ask for the sabzi and salad first and share one bread.",
+            "Oil stays at about a teaspoon per person. The plate works even when the sabzi is simple."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "This is a household rule, not a prescription. Children, athletes and people building weight may need a larger grain portion. Adjust, then keep the vegetables."
+        }
+      ]
+    },
+    {
+      "slug": "ten-minute-walk",
+      "kind": "article",
+      "title": "Walk for ten minutes after you eat",
+      "summary": "Shoes by the door. A short loop after lunch or dinner. Movement that does not need a gym.",
+      "category": "Wellness",
+      "date": "1 October 2026",
+      "minutes": 3,
+      "image": "/images/tip-walk.webp",
+      "imageAlt": "Walking shoes and a water bottle on a sunlit step",
+      "author": "AaharNest Editorial Team",
+      "tags": [
+        "wellness",
+        "walk",
+        "habit",
+        "daily",
+        "movement"
+      ],
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "A long workout is easy to postpone. Ten minutes is not. AaharNest treats a short walk as part of the meal, the way washing the plate is part of cooking."
+        },
+        {
+          "type": "h",
+          "text": "Why it helps"
+        },
+        {
+          "type": "p",
+          "text": "A walk after eating settles the afternoon. You are less likely to lie down straight away, and the next snack can wait. It is also the simplest way to put movement into a day that is mostly a chair."
+        },
+        {
+          "type": "h",
+          "text": "Try this"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Leave shoes where you can see them, not in a cupboard.",
+            "Walk the lane, the terrace or the office stairs. Pace can be easy.",
+            "Take water if it is hot. Ten minutes is the minimum, not a limit.",
+            "If joints hurt, a slow indoor loop still counts. Stop if you feel chest pain or dizziness and get medical help."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "This is not training advice. If you have a heart or joint condition, ask your clinician what pace is safe before you make it a daily rule."
+        }
+      ]
+    },
+    {
+      "slug": "screens-off-before-sleep",
+      "kind": "article",
+      "title": "Put the phone down before bed",
+      "summary": "A cup of something warm, a closed book, and the screen face down. Sleep is part of eating well.",
+      "category": "Wellness",
+      "date": "1 October 2026",
+      "minutes": 3,
+      "image": "/images/tip-sleep.webp",
+      "imageAlt": "A bedside table with tea, a book and a phone face down",
+      "author": "AaharNest Editorial Team",
+      "tags": [
+        "wellness",
+        "sleep",
+        "habit",
+        "daily"
+      ],
+      "sections": [
+        {
+          "type": "p",
+          "text": "Food advice fails on a short night. You wake hungrier, you reach for something sweet, and the careful lunch does not stand a chance. AaharNest counts sleep as a daily-life habit, not a luxury."
+        },
+        {
+          "type": "h",
+          "text": "Why it helps"
+        },
+        {
+          "type": "p",
+          "text": "The last half hour sets the next morning. A phone in the hand keeps the mind at work. A dimmer room and a warmer drink tell the body the kitchen is closed."
+        },
+        {
+          "type": "h",
+          "text": "Try this"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Finish dinner a couple of hours before you lie down.",
+            "Charge the phone outside the pillow. If it must stay in the room, turn it face down.",
+            "Swap the last scroll for a cup of ginger infusion or plain warm milk, if that suits you.",
+            "Keep the room dark and a little cool. The same bedtime on weeknights matters more than a perfect routine."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you snore loudly, wake unrefreshed, or cannot sleep for weeks, that needs a doctor — not another herbal tea."
+        }
+      ]
+    },
+    {
+      "slug": "cook-with-a-teaspoon",
+      "kind": "article",
+      "title": "Cook with one teaspoon of oil",
+      "summary": "Temper the spices in a measured spoon. Everyday food stays tasty without a pool of oil in the pan.",
+      "category": "Nutrition",
+      "date": "1 October 2026",
+      "minutes": 4,
+      "image": "/images/tip-oil.webp",
+      "imageAlt": "A spoon of oil over a home pan of vegetables and curry leaves",
+      "author": "AaharNest Editorial Team",
+      "tags": [
+        "nutrition",
+        "oil",
+        "cooking",
+        "habit",
+        "daily"
+      ],
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "Most home plates get heavy in the tadka, not in the recipe name. A teaspoon of oil or ghee per person is enough to bloom mustard, cumin and curry leaves."
+        },
+        {
+          "type": "h",
+          "text": "Why it helps"
+        },
+        {
+          "type": "p",
+          "text": "You keep the flavour you actually want — the spices — and drop the part you do not notice until you feel sluggish. It is a change you can make tonight, with the same dal and the same sabzi."
+        },
+        {
+          "type": "h",
+          "text": "Try this"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Measure the spoon into the pan before the seeds go in. Do not pour from the bottle.",
+            "Use a wide pan so vegetables brown in that spoon instead of stewing in more oil.",
+            "Save deep-fried snacks for rare days. Roast chana, sprouts or fruit for the afternoon.",
+            "If a dish truly needs more fat, add a few drops at the end so you can taste it, rather than starting with a puddle."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Ghee, mustard oil and groundnut oil all count. The trick is the amount, not a fashionable oil. People who need more calories can add nuts or curd instead of frying."
+        }
+      ]
+    },
+    {
+      "slug": "snack-on-purpose",
+      "kind": "article",
+      "title": "Snack before you are starving",
+      "summary": "A planned bite in the afternoon beats a packet chosen in a rush. Fruit, roasted chana, or one small cooler.",
+      "category": "Wellness",
+      "date": "1 October 2026",
+      "minutes": 3,
+      "image": "/images/tip-snack.webp",
+      "imageAlt": "Roasted chickpeas, a banana and water on a wooden table",
+      "author": "AaharNest Editorial Team",
+      "tags": [
+        "wellness",
+        "snack",
+        "habit",
+        "daily",
+        "nutrition"
+      ],
+      "sections": [
+        {
+          "type": "p",
+          "text": "The four o’clock slump is predictable. Treat it as part of the day, not as a failure of willpower. Decide the snack in the morning, when you are not hungry yet."
+        },
+        {
+          "type": "h",
+          "text": "Why it helps"
+        },
+        {
+          "type": "p",
+          "text": "A planned snack protects dinner. You arrive at the table hungry enough to enjoy it, not so empty that you eat standing up. It also keeps the evening from turning into biscuits and another tea."
+        },
+        {
+          "type": "h",
+          "text": "Try this"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Pick one: a fruit, a small bowl of roasted chana, sprout salad, or the mango mint cooler.",
+            "Put it where you will see it. A snack in a closed tin is a snack you will not eat.",
+            "Sit down for it. Five minutes is enough.",
+            "If you still want dinner early, make dinner lighter — soup or khichdi — rather than adding a second snack."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "One snack. Not a snack and a drink that is really another snack. Packaged namkeen can wait for a festival."
+        }
+      ]
+    },
+    {
+      "slug": "indian-breakfast-ideas",
+      "kind": "article",
+      "title": "Easy Indian breakfasts",
+      "summary": "Poha, idli, chilla, upma and thepla for weekday mornings.",
+      "category": "Breakfast",
+      "date": "10 October 2023",
+      "minutes": 6,
+      "image": "/images/hero-idli.webp",
+      "imageAlt": "An Indian breakfast spread with idli",
+      "author": "AaharNest Editorial Team",
+      "hindi": "पोहा, इडली, चिल्ला, उपमा और थेपला जैसे आसान नाश्ते।",
+      "odia": "ପୋହଳା, ଇଡଲି, ଚିଲ୍ଲା, ଉପମା ଓ ଥେପଲା ଭଳି ସହଜ ଜଳଖିଆ।",
+      "tags": [
+        "breakfast",
+        "indian",
+        "guide"
+      ],
+      "indian": true,
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "A healthy Indian breakfast can be both comforting and nutrient-dense. These are weekday-friendly plates from the AaharNest Kitchen. Each one now has its own method."
+        },
+        {
+          "type": "h",
+          "text": "The weekday set"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Poha — flattened rice, peanuts, turmeric and lemon.",
+            "Idli — steamed fermented batter with chutney and sambar.",
+            "Besan chilla — chickpea batter on a griddle.",
+            "Daliya upma — broken wheat cooked until soft.",
+            "Rava upma — roasted semolina.",
+            "Sprout salad — lemon and chaat masala, no cooking.",
+            "Muesli with yogurt and fruit — no stove.",
+            "Methi thepla — fenugreek flatbreads that travel."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Cook with little oil. Add vegetables where the method allows. A breakfast that repeats is more useful than a breakfast that impresses once."
+        }
+      ]
+    },
+    {
+      "slug": "healthy-lunch-ideas",
+      "kind": "article",
+      "title": "Healthy lunch ideas for weight loss",
+      "summary": "Chicken salad, a quinoa bowl, lentil soup and a sprout salad — lunches that stay light.",
+      "category": "Weight Loss",
+      "date": "1 November 2023",
+      "minutes": 6,
+      "image": "/images/dish-lunch.webp",
+      "imageAlt": "A grilled chicken salad for lunch",
+      "author": "AaharNest Editorial Team",
+      "hindi": "हल्के लंच — चिकन सलाद, क्विनोआ बाउल, दाल सूप, स्प्राउट सलाद और साबूदाना खिचड़ी।",
+      "odia": "ହାଲୁକା ଲଞ୍ଚ — ସାଲାଡ୍, କ୍ୱିନୋଆ ବାଉଲ୍, ଡାଲି ସୁପ୍, ସ୍ପ୍ରାଉଟ୍ ସାଲାଡ୍ ଓ ସାବୁଦାନା ଖିଚୁଡ଼ି।",
+      "tags": [
+        "lunch",
+        "weight-loss",
+        "guide"
+      ],
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "These lunches support a lighter week without leaving you hungry. Control portions. Choose lean protein, whole grains and plenty of vegetables."
+        },
+        {
+          "type": "h",
+          "text": "Five plates"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Grilled chicken salad — greens, cucumber, tomato, lime. No sweet dressing.",
+            "Quinoa and black bean bowl — avocado, coriander, a spoon of curd.",
+            "Lentil soup — onion, carrot, celery, cumin. Better as an early dinner too.",
+            "Sprout salad — lemon and chaat masala when you want something raw.",
+            "Sabudana khichdi — a quiet plate when the day has already been long."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A useful plate is half vegetables, a quarter protein and a quarter grain. Eat slowly enough to notice you are full."
+        }
+      ]
+    },
+    {
+      "slug": "indian-smoothies",
+      "kind": "article",
+      "title": "10 Indian smoothie recipes",
+      "summary": "Mango, spinach, papaya, cucumber-mint and other glasses without extra sugar.",
+      "category": "Weight Loss",
+      "date": "14 October 2023",
+      "minutes": 7,
+      "image": "/images/dish-smoothie.webp",
+      "imageAlt": "A mango and spinach smoothie",
+      "author": "AaharNest Editorial Team",
+      "hindi": "वजन घटाने में मददगार दस भारतीय स्मूदी। शहद वैकल्पिक है।",
+      "odia": "ଓଜନ କମାଇବାରେ ସାହାଯ୍ୟ କରୁଥିବା ଦଶଟି ଭାରତୀୟ ସ୍ମୁଦି। ମହୁ ଇଚ୍ଛାଧୀନ।",
+      "tags": [
+        "smoothie",
+        "snacks",
+        "weight-loss",
+        "guide"
+      ],
+      "sections": [
+        {
+          "type": "p",
+          "text": "Smoothies can support a weight-loss routine because they are filling and nutrient-dense. Blend until smooth. Honey is optional in every glass, and in this kitchen it is usually left out."
+        },
+        {
+          "type": "h",
+          "text": "The ten glasses"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Green apple and spinach — 1 green apple, 1 cup spinach, ½ cup low-fat yogurt, ½ cucumber, ½ cup water.",
+            "Spinach and mango — 1 cup spinach, 1 cup diced mango, ½ cup yogurt, ½ cup water.",
+            "Papaya and ginger — 1 cup papaya, ½ inch ginger, ½ cup yogurt, ½ cup water.",
+            "Banana and oatmeal — 1 banana, ½ cup oats, 1 cup milk, ½ tsp cinnamon.",
+            "Cucumber and mint — 1 cucumber, ¼ cup mint, ½ cup yogurt, lime.",
+            "Kiwi and kale — 2 kiwis, 1 cup kale, ½ cup yogurt, ½ cup water.",
+            "Pomegranate and beetroot — ½ cup seeds, 1 small beetroot, yogurt and water.",
+            "Orange and carrot — 2 oranges, 1 carrot, ½ cup yogurt, ½ cup water.",
+            "Chia and coconut — 2 tbsp chia soaked overnight in ½ cup coconut milk, then blended with yogurt.",
+            "Mint and coriander — ½ cup each of mint and coriander, yogurt, lime, optional green chilli."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Pair these with a balanced diet and movement. Adjust sweetness to taste, and check with a clinician if you have dietary restrictions. Drink a smoothie as the snack, not on top of a full meal."
+        }
+      ]
+    },
+    {
+      "slug": "navratri-fasting-foods",
+      "kind": "article",
+      "title": "Foods for Navratri fasting",
+      "summary": "Sabudana, potato, fruit, yogurt and other vrat plates that still feel like a meal.",
+      "category": "Nutrition",
+      "date": "15 October 2023",
+      "minutes": 6,
+      "image": "/images/dish-navratri.webp",
+      "imageAlt": "A Navratri fasting plate",
+      "author": "AaharNest Editorial Team",
+      "hindi": "नवरात्रि के नौ दिनों में क्या खाएँ, क्या छोड़ें, और कौन-सी व्रत डिश बनाएँ।",
+      "odia": "ନବରାତ୍ରିର ନଅ ଦିନରେ କଣ ଖାଇବେ, କଣ ଛାଡ଼ିବେ ଏବଂ କେଉଁ ବ୍ରତ ଖାଦ୍ୟ ତିଆରି କରିବେ।",
+      "tags": [
+        "navratri",
+        "vrat",
+        "fasting",
+        "nutrition",
+        "indian"
+      ],
+      "indian": true,
+      "popular": true,
+      "sections": [
+        {
+          "type": "p",
+          "text": "During Navratri many people fast for nine days. Exact rules vary by region and family. This is a general, nourishing guide, not a rule for your home."
+        },
+        {
+          "type": "h",
+          "text": "Foods usually allowed"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Fruits: banana, apple, pomegranate, orange.",
+            "Dairy: milk, yogurt and paneer.",
+            "Root vegetables: potato, sweet potato and pumpkin.",
+            "Flours: buckwheat (kuttu) and water chestnut (singhara).",
+            "Nuts and seeds: almonds, walnuts, pumpkin seeds.",
+            "Seasoning: cumin, sendha namak, black pepper, green chilli, ghee.",
+            "Sabudana, for khichdi and vada."
+          ]
+        },
+        {
+          "type": "h",
+          "text": "Foods usually avoided"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Wheat, rice and regular lentils.",
+            "Non-vegetarian food.",
+            "Onion and garlic, in many homes.",
+            "Caffeine, alcohol and packaged junk food.",
+            "Regular table salt — use rock salt instead."
+          ]
+        },
+        {
+          "type": "h",
+          "text": "Dishes you can cook"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Sabudana khichdi",
+            "Kuttu ki roti",
+            "Singhare ke aloo",
+            "Samvat rice pulao",
+            "Makhana curry",
+            "Rajgira paratha",
+            "Fruit chaat with sendha namak",
+            "Sama ke chawal ki kheer",
+            "Dahi aloo and kheera raita",
+            "Phalahari pakora, vrat ki kadhi, coconut ladoo"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Always follow your own family or spiritual guidance. Some fasts are stricter than others."
+        }
+      ]
+    },
+    {
+      "slug": "water-intake",
+      "kind": "article",
+      "title": "How much water is enough",
+      "summary": "A simple way to drink through the day without turning it into a chore.",
+      "category": "Nutrition",
+      "date": "9 October 2023",
+      "minutes": 5,
+      "image": "/images/dish-water.webp",
+      "imageAlt": "Water with lemon and cucumber",
+      "author": "AaharNest Editorial Team",
+      "hindi": "रोज़ लगभग 8 गिलास पानी से पाचन, त्वचा, ऊर्जा और ध्यान बेहतर रहते हैं।",
+      "odia": "ପ୍ରତିଦିନ ପ୍ରାୟ ୮ ଗ୍ଲାସ ପାଣି ପାଚନ, ଚର୍ମ, ଶକ୍ତି ଓ ଧ୍ୟାନକୁ ସାହାଯ୍ୟ କରେ।",
+      "tags": [
+        "water",
+        "hydration",
+        "nutrition",
+        "wellness"
+      ],
+      "sections": [
+        {
+          "type": "p",
+          "text": "The body is about 60% water. Almost every function depends on it, yet hydration is easy to postpone."
+        },
+        {
+          "type": "p",
+          "text": "Needs vary with age, activity and climate. A simple starting point is about 8 cups — roughly 1.9 litres — a day. That helps prevent the fatigue, poor focus and constipation that follow even mild dehydration. In Indian heat, or after a walk, you will need more."
+        },
+        {
+          "type": "h",
+          "text": "What water is doing"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Cooling you through sweat and breath.",
+            "Helping digestion and moving waste.",
+            "Cushioning joints.",
+            "Supporting kidney and liver clearance.",
+            "Keeping skin from looking dull.",
+            "Protecting memory and concentration.",
+            "Helping appetite control when you drink before meals."
+          ]
+        },
+        {
+          "type": "h",
+          "text": "How to actually drink enough"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Treat thirst as a cue, not a suggestion.",
+            "Keep a bottle nearby and drink on a loose schedule.",
+            "Check urine colour — pale straw is a good sign.",
+            "Increase intake in heat or during exercise.",
+            "Count hydrating fruit and vegetables as part of the day."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Make water a daily priority. It is one of the simplest levers for feeling better."
+        }
+      ]
+    },
+    {
+      "slug": "menstrual-cramps-remedies",
+      "kind": "article",
+      "title": "Home remedies for cramps",
+      "summary": "Ginger tea, ajwain, heat and a gentle walk — and when to see a doctor.",
+      "category": "Wellness",
+      "date": "12 October 2023",
+      "minutes": 5,
+      "image": "/images/dish-ginger.webp",
+      "imageAlt": "Ginger tea in a cup",
+      "author": "AaharNest Editorial Team",
+      "hindi": "अदरक चाय, अजवाइन, मेथी, गर्मी और हल्की योगासन। तेज दर्द में डॉक्टर दिखाएँ।",
+      "odia": "ଅଦା ଚା, ଜୁଆଣି, ମେଥି, ଗରମ ଓ ହାଲୁକା ଯୋଗ। ତୀବ୍ର ଯନ୍ତ୍ରଣାରେ ଡାକ୍ତର ଦେଖାନ୍ତୁ।",
+      "tags": [
+        "wellness",
+        "cramps",
+        "ginger",
+        "home-remedy"
+      ],
+      "sections": [
+        {
+          "type": "p",
+          "text": "These remedies help some people. They are not a substitute for medical care. See a clinician for severe or persistent pain."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Ginger tea: boil fresh ginger slices in water. Add honey or lemon. Drink a few times a day.",
+            "Ajwain: boil a teaspoon of carom seeds in a cup of water and drink it warm.",
+            "Fenugreek seeds: soak a teaspoon overnight and drink the water in the morning.",
+            "Sesame seeds: dry roast, grind, mix with a little honey in the days before your period.",
+            "Cinnamon: a teaspoon in warm milk.",
+            "Saffron: a few strands steeped in hot water.",
+            "Aloe vera: a small amount of gel with honey.",
+            "Heat: a heating pad or hot-water bottle on the lower abdomen.",
+            "Gentle yoga: child’s pose and cat-cow can ease tightness.",
+            "Food and water: cut back on caffeine, salt and processed food. Lean on fruit, vegetables and whole grains."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Responses vary. If cramps disrupt daily life, get a proper diagnosis rather than only self-treating."
+        }
+      ]
+    },
+    {
+      "slug": "gluten-free-diet",
+      "kind": "article",
+      "title": "A gluten-free plate that still feels abundant",
+      "summary": "Fruit, pulses, quinoa, millets and the habits that keep a gluten-free kitchen balanced.",
+      "category": "Nutrition",
+      "date": "9 October 2023",
+      "minutes": 6,
+      "image": "/images/dish-millet.webp",
+      "imageAlt": "A bowl of millet",
+      "author": "AaharNest Editorial Team",
+      "hindi": "ग्लूटेन-फ्री रहते हुए भी थाली को संतुलित रखें — फल, दाल, क्विनोआ, बाजरा।",
+      "odia": "ଗ୍ଲୁଟେନ୍ ମୁକ୍ତ ରହିଲେ ମଧ୍ୟ ଥାଳି ସନ୍ତୁଳିତ ରଖନ୍ତୁ — ଫଳ, ଡାଲି, କ୍ୱିନୋଆ, ମାଣ୍ଡିଆ।",
+      "tags": [
+        "gluten-free",
+        "nutrition",
+        "millets",
+        "guide"
+      ],
+      "sections": [
+        {
+          "type": "p",
+          "text": "A gluten-free diet is essential for coeliac disease, non-coeliac gluten sensitivity or wheat allergy. Others choose it as a lifestyle. Either way, the plate still needs to be balanced."
+        },
+        {
+          "type": "h",
+          "text": "What to build the plate from"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Fruit and vegetables — naturally gluten-free.",
+            "Lean proteins — chicken, fish, eggs if you eat them, and lentils, chickpeas and beans.",
+            "Whole gluten-free grains — quinoa, brown rice, millet, buckwheat, jowar, bajra, ragi.",
+            "Flours — almond, rice, jowar, bajra. Read pasta labels.",
+            "Nuts and seeds.",
+            "Dairy or labelled alternatives. Sauces and spice mixes can hide wheat."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Cook from scratch when you can. If you have coeliac disease, watch cross-contamination in shared kitchens. Processed dressings and marinades are common traps."
+        },
+        {
+          "type": "p",
+          "text": "Millets are a particularly good swap in an Indian kitchen: ragi porridge, jowar roti, bajra khichdi. They add fibre and do not require a special imported product."
+        }
+      ]
+    },
+    {
+      "slug": "breakfast-weight-loss",
+      "kind": "article",
+      "title": "Healthy breakfast for weight loss",
+      "summary": "A 30-day pattern: fibre and protein in the morning, and the foods that undo it.",
+      "category": "Weight Loss",
+      "date": "7 October 2023",
+      "minutes": 5,
+      "image": "/images/dish-oats.webp",
+      "imageAlt": "A bowl of plain oats",
+      "author": "AaharNest Editorial Team",
+      "hindi": "30 दिनों के वजन घटाने के लिए फाइबर और प्रोटीन वाला हल्का नाश्ता।",
+      "odia": "୩୦ ଦିନରେ ଓଜନ କମାଇବା ପାଇଁ ଫାଇବର ଓ ପ୍ରୋଟିନ୍ ଥିବା ହାଲୁକା ଜଳଖିଆ।",
+      "tags": [
+        "breakfast",
+        "weight-loss",
+        "meal-plan"
+      ],
+      "sections": [
+        {
+          "type": "p",
+          "text": "Breakfast starts the morning’s hunger. For a 30-day cut, keep the plate high in fibre and protein, and low in added sugar."
+        },
+        {
+          "type": "h",
+          "text": "Build most mornings from these"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Plain oats, not sugary sachets.",
+            "Plain Greek yogurt, low-fat or non-fat.",
+            "Berries on the oats or yogurt.",
+            "A small sprinkle of almonds, walnuts, chia or flax — a sprinkle, not a cup.",
+            "Egg-white omelette or a scramble with spinach, pepper and tomato.",
+            "Whole-grain toast only if you want the extra carbohydrate.",
+            "Green tea or black coffee, without sugary creamers.",
+            "Water first. Thirst sometimes looks like hunger."
+          ]
+        },
+        {
+          "type": "h",
+          "text": "Keep these rules for 30 days"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Watch portions.",
+            "Skip sugary cereal, pastry and sweet drinks.",
+            "Limit processed food.",
+            "Eat slowly enough to notice fullness.",
+            "Keep breakfast timing consistent."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Breakfast only works as part of the whole day: balanced meals, movement and sleep. Check with a professional before a short, aggressive plan."
+        }
+      ]
+    },
+    {
+      "slug": "breakfast-weight-gain",
+      "kind": "article",
+      "title": "Healthy breakfast for weight gain",
+      "summary": "Higher-calorie breakfasts that still include protein, carbohydrate and fat — not just sweets.",
+      "category": "Breakfast",
+      "date": "7 October 2023",
+      "minutes": 5,
+      "image": "/images/mail-morning.webp",
+      "imageAlt": "A generous breakfast bowl",
+      "author": "AaharNest Editorial Team",
+      "hindi": "30 दिनों के स्वस्थ वजन बढ़ाने के लिए कैलोरी-भरे लेकिन संतुलित नाश्ते।",
+      "odia": "୩୦ ଦିନରେ ସୁସ୍ଥ ଭାବେ ଓଜନ ବଢ଼ାଇବା ପାଇଁ ସନ୍ତୁଳିତ ଜଳଖିଆ।",
+      "tags": [
+        "breakfast",
+        "weight-gain",
+        "meal-plan"
+      ],
+      "sections": [
+        {
+          "type": "p",
+          "text": "Healthy weight gain still needs protein, carbohydrates, fats and micronutrients. Use these breakfasts as a 30-day starting pattern and scale portions to your needs."
+        },
+        {
+          "type": "h",
+          "text": "Plates that add up"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Oatmeal with nut butter and banana — ½ cup oats, 1 cup milk, 1–2 tbsp nut butter, 1 banana, seeds.",
+            "Greek yogurt parfait — full-fat yogurt, a little granola, berries.",
+            "Egg, spinach and avocado toast — 2 slices whole-grain bread, 2 eggs, ½ avocado.",
+            "Smoothie bowl — yogurt or milk, banana, berries, and a topping of almonds and coconut.",
+            "Whole-grain pancakes with yogurt and fruit.",
+            "A denser smoothie — milk, banana, peanut butter, oats."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Talk to a clinician or dietitian before a structured gain plan. Food plus training plus rest works better than calories alone."
+        }
+      ]
+    }
+  ],
+  "shopCategories": [
+    {
+      "name": "Healthy snacks",
+      "note": "Roasted, portioned, and made to travel."
+    },
+    {
+      "name": "Millet products",
+      "note": "Ragi, jowar, bajra and foxtail, ready for the everyday plate."
+    },
+    {
+      "name": "Breakfast mixes",
+      "note": "Poha, upma and chilla mixes with the tadka already thought through."
+    },
+    {
+      "name": "Spice blends",
+      "note": "Small tins for tempering, not a drawer of unused jars."
+    },
+    {
+      "name": "Ready to cook",
+      "note": "Weeknight kits that still taste like a home kitchen."
+    },
+    {
+      "name": "Pantry staples",
+      "note": "The quiet foods a wholesome cupboard actually uses."
+    }
+  ],
+  "weekPlan": [
+    {
+      "day": "Monday",
+      "breakfast": "poha",
+      "lunch": "chicken-cucumber-salad",
+      "dinner": "lentil-soup",
+      "snack": "mango-mint-cooler"
+    },
+    {
+      "day": "Tuesday",
+      "breakfast": "besan-chilla",
+      "lunch": "quinoa-bean-bowl",
+      "dinner": "sabudana-khichdi",
+      "snack": "sprout-salad"
+    },
+    {
+      "day": "Wednesday",
+      "breakfast": "idli",
+      "lunch": "quinoa-bean-bowl",
+      "dinner": "lentil-soup",
+      "snack": "ginger-turmeric-infusion"
+    },
+    {
+      "day": "Thursday",
+      "breakfast": "rava-upma",
+      "lunch": "chicken-cucumber-salad",
+      "dinner": "sabudana-khichdi",
+      "snack": "sprout-salad"
+    },
+    {
+      "day": "Friday",
+      "breakfast": "daliya-upma",
+      "lunch": "quinoa-bean-bowl",
+      "dinner": "lentil-soup",
+      "snack": "mango-mint-cooler"
+    },
+    {
+      "day": "Saturday",
+      "breakfast": "methi-thepla",
+      "lunch": "chicken-cucumber-salad",
+      "dinner": "sabudana-khichdi",
+      "snack": "sprout-salad"
+    },
+    {
+      "day": "Sunday",
+      "breakfast": "muesli-yogurt",
+      "lunch": "sprout-salad",
+      "dinner": "lentil-soup",
+      "snack": "ginger-turmeric-infusion"
+    }
+  ]
+}
