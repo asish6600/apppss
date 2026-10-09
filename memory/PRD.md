@@ -38,3 +38,17 @@ Improve AaharNest messaging and UX without redesigning the website. Preserve the
 ## Verification
 - Backend tests: 7/7 pass (product-detail fields, origin cleanup, product→recipe fallback, recipe→product fallback, auth-gated recipes, serviceability PIN, guest cart with CSRF).
 - Frontend tests: hero brand slide, About page content, PDP Details tab (all 10 fields + transparency message), mobile 390px PDP, cart/serviceability — all verified.
+
+## 2026-02 iteration B — Odia recipe coverage
+- Added 15 authentic Odia recipes to backend/odia_recipes.py: mandia-manda, mandia-ambili, chatua-pana, til-nadia-ladoo, mudhi-mishrana, kadali-manja-bara, podo-pitha, kodo-khechedi, palli-chatani, chenchudi, tulasi-chaha, nadia-ladoo, moringa-rasa, amla-chatani, ashwa-pana.
+- Each recipe is a real Odia dish (Raja/Pana Sankranti/Lakshmi Puja festival pithas, tribal Koraput ambili, Puri temple khechedi style, Cuttack mudhi mishrana) with ingredients, step-by-step method, nutrition, notes and festival/healthy tags.
+- Every one of the 79 published products in catalog.py now has `recipes=[...]` referencing real Odia slugs. Combos too.
+- SEED_VERSION bumped to 10 to force product reseed.
+- Backend `/api/recipes/{slug}` product cap raised from 6 → 10 so richer recipes (kodo-khechedi links 6 millets + dal + spices + nuts) can show their full product set.
+- organic-amla-powder now linked to 3 recipes (amla-chatani + chatua-pana + tomato-khata) — amla is traditionally used in all three.
+
+### Verified
+- 47/47 backend tests pass (/app/backend/tests/test_product_recipe_links.py + previous).
+- /api/products/{slug} related_recipes non-empty for every one of 79 products.
+- Every new recipe has 5+ ingredients, 4+ steps, nutrition, and a populated products list.
+- Frontend PDPs show real Odia recipe cards for moong-dal, mustard-oil, amla-powder, urad-dal etc.

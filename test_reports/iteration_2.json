@@ -1,0 +1,39 @@
+{
+  "summary": "Verified every one of the 79 published products has at least one Odia recipe linked, and all 15 new recipes resolve correctly. Added /app/backend/tests/test_product_recipe_links.py with 40 tests (plus the 7 existing in test_know_your_food.py) — ALL 47 PASS. Covers: product count = 79, every product's related_recipes non-empty with slugs referencing recipes in live /api/recipes DB, every new recipe (mandia-manda, mandia-ambili, chatua-pana, til-nadia-ladoo, mudhi-mishrana, kadali-manja-bara, podo-pitha, kodo-khechedi, palli-chatani, chenchudi, tulasi-chaha, nadia-ladoo, moringa-rasa, amla-chatani, ashwa-pana) has 5+ ingredients, 4+ steps, nutrition, non-empty products list with real catalog slugs (incl. combos / today's deals / pack-size variants); all 19 existing Odia recipes still resolvable; podo-pitha products include red-rice/urad-dal-whole/desiccated-coconut/jaggery; kodo-khechedi products include multiple real millet SKUs; total recipe count >=34; all 15 new slugs present in /api/recipes list; auth gating on /api/recipes preserved; existing cart + serviceability flows unaffected. Frontend spot-check on PDPs: /en/product/organic-moong-dal shows 2 recipe cards, /en/product/cold-pressed-mustard-oil shows 4, /en/product/organic-amla-powder shows 1 (only amla-chatani links to it in catalog). Mobile 390px PDP renders cleanly. 401 console errors are expected (unauthenticated /api/recipes call from marketing widget — pre-existing behavior).",
+  "backend_issues": {"critical": [], "minor": [
+    {"endpoint": "/api/recipes/kodo-khechedi", "issue": "products list is capped at 6 by to_list(6); 6 millet SKUs reference this recipe so organic-moong-dal (also linked) does not appear. Task description expected moong-dal + cashews etc. Consider raising to_list to 10 or sorting to prioritize non-millet staples."},
+    {"endpoint": "/api/products (listing)", "issue": "Combo products (healthy-breakfast-box) and today's-deal products (cold-pressed-sesame-oil, organic-multigrain-flour) are excluded from the default list — expected per existing filter behaviour, but may surprise consumers of the API. Three new recipes (mandia-ambili, til-nadia-ladoo, kadali-manja-bara) link to these so their 'Shop ingredients' blocks mix in slugs that aren't discoverable from the main Shop. Not a bug per se; flagged for awareness."}
+  ]},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [
+      {"flow": "PDP recipe cards (organic-amla-powder)", "issue": "Only 1 recipe card shown (amla-chatani) vs task-stated 2-4. Only amla-chatani references amla-powder in catalog recipes list — need to add amla-powder to one more recipe (e.g. chatua-pana, moringa-rasa, or tulasi-chaha) to meet the 2-4 expectation.", "affected_selectors": ["[data-testid^='pdp-recipe-']"]}
+    ],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_product_recipe_links.py",
+    "/app/backend/tests/test_know_your_food.py",
+    "/app/test_reports/pytest/product_recipe_links.xml"
+  ],
+  "action_items": [
+    "Optional: raise /api/recipes/{slug} products to_list limit from 6 to 10 so kodo-khechedi surfaces moong-dal + cashews as the task described.",
+    "Optional: add 1-2 more recipe cross-links on organic-amla-powder so PDP shows 2+ recipe cards per task expectation."
+  ],
+  "critical_code_review_comments": [
+    "catalog.py has grown to 617 lines; still manageable but close to the 700-line split threshold.",
+    "/api/recipes/{slug} caps products at 6 via to_list(6); this silently truncates the 'Shop ingredients' list and causes task-level mismatches for recipes with many linked products (e.g. kodo-khechedi).",
+    "Three new recipes reference products that are legitimately in the catalog but hidden from /api/products default listing (combos + today's deals). Not a bug, but if the main listing is a user's discovery path, these cross-links will dead-end in the UI only until the user already knows the slug.",
+    "SEED_VERSION bump mechanism (v8->v9) correctly triggers full reseed; verified by querying product recipe_slugs post-deploy."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_product_recipe_links.py (new)"
+  ],
+  "success_rate": {"backend": "100%", "frontend": "95%"},
+  "test_credentials": "Admin asishs@2pirad.com / AaharNest@2026 (seeded via backend/.env ADMIN_EMAIL/ADMIN_PASSWORD from previous iteration).",
+  "seed_data_creation": "None; relied on SEED_VERSION=9 auto-reseed from server startup.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Backend regression suite: pytest backend/tests/test_product_recipe_links.py backend/tests/test_know_your_food.py -o 'addopts=' -v. The product_recipe_links test fixture builds all_catalog_slugs by querying /api/products with combo=true and todays_deal=true separately — necessary because the default listing excludes those. For recipe→product-slug validation it falls back to GET /api/products/{slug} to accommodate pack-size variants (variant_primary=false).",
+  "rca of the issue": "No critical bugs found. Minor task-vs-implementation mismatches: (1) kodo-khechedi 'Shop ingredients' block is truncated to 6 items by routes.py line 457 to_list(6), hiding moong-dal; (2) organic-amla-powder has only 1 linked recipe in catalog.py — PDP cannot show 2-4 cards. Both are cosmetic and require 1-line fixes if the main agent wants to match the task description exactly."
+}

@@ -377,7 +377,7 @@ SINGLES = [
       "100% moringa (drumstick) leaf powder.", N("205 kcal", "27 g", "19 g"), WP, [VG, GF], offer=True, farm=True, region="Odisha", recipes=["moringa-rasa", "chenchudi"]),
     P("organic-amla-powder", "Organic Amla Powder", "wellness-foods", "Amla Powder", 195, "200 g", IMG["amla"],
       "Sun-dried Indian gooseberry powder.", "Tart amla fruit dried and ground. Traditionally taken with warm water, mixed into chutneys or used in hair-care packs.",
-      "100% amla (Indian gooseberry) powder.", N("300 kcal", "4 g", "22 g"), WP, [VG, GF], disc=10, farm=True, region="Odisha", recipes=["amla-chatani"]),
+      "100% amla (Indian gooseberry) powder.", N("300 kcal", "4 g", "22 g"), WP, [VG, GF], disc=10, farm=True, region="Odisha", recipes=["amla-chatani", "chatua-pana", "tomato-khata"]),
     P("organic-wheatgrass-powder", "Organic Wheatgrass Powder", "wellness-foods", "Wheatgrass Powder", 345, "200 g", IMG["wheatgrass"],
       "Young wheatgrass, low-temperature dried.", "Tender wheatgrass harvested young and dried gently to keep its bright colour. Blend into juices and smoothies.",
       "100% wheatgrass powder.", N("312 kcal", "25 g", "29 g"), WP, [VG, GF], disc=5, new=True, recipes=["moringa-rasa", "chatua-pana"]),

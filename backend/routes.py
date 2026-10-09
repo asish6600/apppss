@@ -454,7 +454,7 @@ async def get_recipe(slug: str, user=Depends(get_current_user)):
         raise HTTPException(status_code=404, detail="Recipe not found")
     related = await db.recipes.find({"slug": {"$ne": slug}, "category": r["category"]}, {"_id": 0, "title": 1, "slug": 1, "image": 1, "minutes": 1}).to_list(3)
     # products using this recipe (explicitly linked via recipe_slugs on the product)
-    products = [present_product(x) for x in await db.products.find({"recipe_slugs": slug, "status": "PUBLISHED"}, {"_id": 0}).to_list(6)]
+    products = [present_product(x) for x in await db.products.find({"recipe_slugs": slug, "status": "PUBLISHED"}, {"_id": 0}).to_list(10)]
     # Fallback: if no explicit links, keyword-match the recipe's ingredient list against product
     # names and search_keywords so the "Shop ingredients" block is populated with the staples a
     # cook would actually need. Never invents a product — only surfaces catalogue items that
