@@ -1,0 +1,24 @@
+{
+  "summary": "Iteration 3 verified: (1) Every product now exposes odia_name on /api/products and PDP; spot-checks (Mandia/Sorisha Tela/Guda Churna/Chatua/Sabuta Biri/Anla Churna/Chuda) all exact-match. (2) search_keywords extended with Odia term — ?q=mandia, ?q=sorisha, ?q=chatua all return correct product families. (3) 79/79 shop cards render 'Odia: <name>' chip with data-testid product-odia-name-<slug>; PDP shows pdp-odia-name below h1 on /en/product/organic-ragi-whole (Mandia) and /en/product/cold-pressed-mustard-oil (Sorisha Tela). (4) /en/recipes (authenticated as admin via /api/auth/login) renders festival-collections strip with 5 chips, all with correct Odia label + season + 1-recipe counts: raja→podo-pitha, pana-sankranti→chatua-pana, makar-sankranti→til-nadia-ladoo, lakshmi-puja→nadia-ladoo, prathamastami→enduri-pitha. festival-clear + festival-active-pill behave correctly. (5) recipe-search-panel with recipe-ingredient-input and recipe-ingredient-chips works: 'ragi' → [mandia-manda, mandia-ambili]; 'mustard oil' → 16 recipes including all five expected (dalma, besara, mudhi-mishrana, chenchudi, chakuli-pitha); recipe-search-clear resets; chip toggle sets/clears input; empty-state message changes to 'No recipes mention “X” yet.' with recipes-empty testid preserved. (6) Combined festival+search+meal filters compose correctly (meal pill counts reflect active search). All 14 new backend tests + prior 47 regression pass.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": [
+    "/app/backend/tests/test_odia_names_and_recipes.py",
+    "/app/test_reports/pytest/odia_names.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Recipes.jsx FESTIVAL_COLLECTIONS pana-sankranti match() uses `||` with `&&` without parentheses: `/pana sankranti|maha bisuba/i.test(r.festive) || (r.tags||[]).some(/sankranti/) && (r.tags||[]).some(/pana|sattu/)` — JS precedence makes this `A || (B && C)` which is the intended behaviour, but it is easy to misread. Suggest explicit parens.",
+    "Recipes.jsx `recipeMatchesTerm` concatenates ingredient+title+summary+tags; works correctly. Consider also including r.notes and r.category for completeness (minor).",
+    "catalog.py has grown with ODIA_NAMES dict (85 entries); file was already near 700-line split threshold in iteration 2 — still manageable but worth watching.",
+    "ProductCard shows odia_name only when truthy (good — combos with empty string hide the line); no empty 'Odia:' row renders."
+  ],
+  "updated_files": ["/app/backend/tests/test_odia_names_and_recipes.py (new)"],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "test_credentials": "Admin asishs@2pirad.com / AaharNest@2026 (password login via POST /api/auth/login, no CSRF required). Login was performed inside browser context via fetch() so cookies set correctly.",
+  "seed_data_creation": "None; relied on SEED_VERSION=11 auto-reseed.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Backend regression: pytest backend/tests/test_odia_names_and_recipes.py backend/tests/test_product_recipe_links.py backend/tests/test_know_your_food.py -o 'addopts=' -v. RecipeCard links to /recipes/<slug> (plural) with data-testid='recipe-card-<slug>'. For Recipes page tests, use page.evaluate to POST /api/auth/login (no CSRF needed) rather than navigating the OTP-only /en/login form.",
+  "rca of the issue": "No issues found. All three new features (Odia names, festival collections, ingredient search) wire up correctly on both backend and frontend."
+}

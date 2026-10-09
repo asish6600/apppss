@@ -52,3 +52,14 @@ Improve AaharNest messaging and UX without redesigning the website. Preserve the
 - /api/products/{slug} related_recipes non-empty for every one of 79 products.
 - Every new recipe has 5+ ingredients, 4+ steps, nutrition, and a populated products list.
 - Frontend PDPs show real Odia recipe cards for moong-dal, mustard-oil, amla-powder, urad-dal etc.
+
+## 2026-02 iteration C — Odia names, festival collections, recipe search
+- **Odia names on every product.** Added `ODIA_NAMES` dict in catalog.py mapping each of 79 product slugs to a romanised Odia name (Mandia, Sorisha Tela, Chatua, Chuda, Muga Dali, Haladi Guda, Anla Churna, etc.). Merged into every product dict + search_keywords. Displayed under the product name on ShopCard, PDP h1 and anywhere ProductCard renders, in forest-green italic serif. SEED_VERSION bumped to 11.
+- **Festival Collections** on /recipes page. New `FESTIVAL_COLLECTIONS` strip above the meal filter — Raja Parba (podo-pitha), Pana Sankranti (chatua-pana), Makar Sankranti (til-nadia-ladoo), Lakshmi Puja (nadia-ladoo), Prathamastami (enduri-pitha). Only festivals with at least one real recipe appear. Clicking a chip filters the list; a Clear button + active-pill confirm the state. Match functions check real `festive`/`tags` fields only — never guess.
+- **Recipe search by ingredient.** New `recipe-search-panel` with input `recipe-ingredient-input` and 13 ingredient chips (ragi, moong dal, mustard oil, jaggery, coconut, sesame, urad dal, turmeric, amla, millet, sattu, poha, panch phutana). Filter matches against recipe title, summary, tags and ingredient array. Composes with meal filter + healthy toggle + festival filter.
+- **Search also matches Odia names on Shop** — `/api/products?q=mandia` returns ragi, `?q=sorisha` returns mustard oil.
+
+### Verified
+- Backend: 100% (14 new tests + 47 regression) — odia_name on every product, search by Odia term works.
+- Frontend: 100% — 79 shop cards render Odia label, PDP shows pdp-odia-name, festival chips filter correctly, ingredient search + chips + Clear + empty-state copy all behave.
+- Existing design, auth, cart, checkout, serviceability, PDP Details tab, About page content unchanged.

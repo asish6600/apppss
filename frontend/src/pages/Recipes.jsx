@@ -26,7 +26,8 @@ const FESTIVAL_COLLECTIONS = [
     match: (r) => /raja/i.test(r.festive || "") || (r.tags || []).some((t) => /raja/i.test(t)) },
   { key: "pana-sankranti", name: "Pana Sankranti", odia: "Maha Bisuba", season: "April",
     note: "Odia new year — chatua pana, bela pana and the first cooling drinks of summer.",
-    match: (r) => /pana sankranti|maha bisuba/i.test(r.festive || "") || (r.tags || []).some((t) => /sankranti/i.test(t)) && (r.tags || []).some((t) => /pana|sattu/i.test(t)) },
+    match: (r) => /pana sankranti|maha bisuba/i.test(r.festive || "")
+      || ((r.tags || []).some((t) => /sankranti/i.test(t)) && (r.tags || []).some((t) => /pana|sattu/i.test(t))) },
   { key: "makar-sankranti", name: "Makar Sankranti", odia: "Makara", season: "January",
     note: "Harvest festival — til nadia ladoo and freshly pressed oils, offered on the chaula raja.",
     match: (r) => /makar/i.test(r.festive || "") || (r.tags || []).some((t) => /makar/i.test(t)) },
