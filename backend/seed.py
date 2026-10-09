@@ -38,7 +38,7 @@ FARMERS = [
      "how_we_work": "Better connections between farmers and customers can create stronger local food ecosystems.", "demo": True},
 ]
 
-SEED_VERSION = "8"  # bump when the catalogue structure changes
+SEED_VERSION = "9"  # bump when the catalogue structure changes
 
 
 async def seed_all():
