@@ -88,6 +88,7 @@ export default function Product() {
 
           <div>
             <h1 className="font-serif text-3xl text-charcoal md:text-4xl">{p.name}</h1>
+            {p.odia_name && <p className="mt-1 font-serif text-base italic text-forest/85" data-testid="pdp-odia-name">Odia: {p.odia_name}</p>}
             <p className="mt-1 text-sm text-charcoal/55">{p.pack_size} · SKU {p.sku}</p>
             <div className="mt-4 flex items-end gap-3">
               <span className="text-3xl font-700 text-forest">{inr(p.price)}</span>

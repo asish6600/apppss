@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Lock, Clock, Users, ChefHat, Bookmark, Leaf } from "lucide-react";
+import { Lock, Clock, Users, ChefHat, Bookmark, Leaf, Search, Sparkles, X } from "lucide-react";
 import { toast } from "sonner";
 import api, { apiError } from "@/lib/api";
 import { useI18n } from "@/lib/i18n";
@@ -17,6 +17,44 @@ const MEAL_GROUPS = [
   ["Snacks", "Jalakhia", "Pitha and prasad sweets made for festivals and long afternoons."],
 ];
 
+/* Odia festivals that have real pithas, prasad or seasonal preparations in our collection.
+   The `match` function returns true when a recipe's festive/tags/notes genuinely reference the
+   festival — we never label a recipe with a festival it does not belong to. */
+const FESTIVAL_COLLECTIONS = [
+  { key: "raja", name: "Raja Parba", odia: "Raja", season: "June",
+    note: "The three-day monsoon celebration — podo pitha, chhena poda and the sweets girls carry on the swings.",
+    match: (r) => /raja/i.test(r.festive || "") || (r.tags || []).some((t) => /raja/i.test(t)) },
+  { key: "pana-sankranti", name: "Pana Sankranti", odia: "Maha Bisuba", season: "April",
+    note: "Odia new year — chatua pana, bela pana and the first cooling drinks of summer.",
+    match: (r) => /pana sankranti|maha bisuba/i.test(r.festive || "") || (r.tags || []).some((t) => /sankranti/i.test(t)) && (r.tags || []).some((t) => /pana|sattu/i.test(t)) },
+  { key: "makar-sankranti", name: "Makar Sankranti", odia: "Makara", season: "January",
+    note: "Harvest festival — til nadia ladoo and freshly pressed oils, offered on the chaula raja.",
+    match: (r) => /makar/i.test(r.festive || "") || (r.tags || []).some((t) => /makar/i.test(t)) },
+  { key: "lakshmi-puja", name: "Lakshmi Puja", odia: "Lakshmi Mangalbara", season: "October–November",
+    note: "Thursday prasad for the household goddess — nadia ladoo, kheer and simple sweets.",
+    match: (r) => /lakshmi/i.test(r.festive || "") || (r.tags || []).some((t) => /lakshmi|kartika/i.test(t)) },
+  { key: "prathamastami", name: "Prathamastami", odia: "Prathamastami", season: "November",
+    note: "The festival that marks the eldest child — enduri pitha steamed in a turmeric leaf.",
+    match: (r) => /prathamastami/i.test(r.festive || "") || (r.tags || []).some((t) => /prathamastami/i.test(t)) },
+];
+
+/* Tiny helper: does the recipe mention this ingredient keyword anywhere in its ingredient list,
+   tags, title or summary? Case-insensitive. Used by the "search recipes by ingredient" box. */
+function recipeMatchesTerm(r, q) {
+  if (!q) return true;
+  const n = q.trim().toLowerCase();
+  if (!n) return true;
+  const haystack = [
+    r.title, r.summary, ...(r.tags || []), ...(r.ingredients || []),
+  ].filter(Boolean).join(" | ").toLowerCase();
+  return haystack.includes(n);
+}
+
+const INGREDIENT_CHIPS = [
+  "ragi", "moong dal", "mustard oil", "jaggery", "coconut", "sesame", "urad dal",
+  "turmeric", "amla", "millet", "sattu", "poha", "panch phutana",
+];
+
 export function Recipes() {
   const { t } = useI18n();
   const { ready, isAuthed, refresh } = useAuth();
@@ -24,6 +62,8 @@ export function Recipes() {
   const [preview, setPreview] = useState(0);
   const [meal, setMeal] = useState("All");
   const [healthyOnly, setHealthyOnly] = useState(false);
+  const [query, setQuery] = useState("");
+  const [festival, setFestival] = useState(null);
   useSEO({
     title: "Authentic Odia Recipes · AaharNest",
     description: "Traditional recipes from Odisha — chakuli pitha, ghuguni, dahi pakhala, dalma, santula, besara, khechedi, chhena poda — grouped by breakfast, lunch, dinner and snacks.",
@@ -34,6 +74,14 @@ export function Recipes() {
     if (isAuthed) api.get("/recipes").then((r) => setRecipes(r.data.recipes)).catch(() => setRecipes([]));
     else api.get("/recipes-count").then((r) => setPreview(r.data.count)).catch(() => {});
   }, [ready, isAuthed]);
+
+  // Live festival-collection counts, computed from the actual loaded recipe set so an empty
+  // festival never shows up as a card the user can tap and get nothing from.
+  const festivalCounts = useMemo(() => {
+    const all = recipes || [];
+    return FESTIVAL_COLLECTIONS.map((f) => ({ ...f, count: all.filter(f.match).length }))
+      .filter((f) => f.count > 0);
+  }, [recipes]);
 
   if (!ready) return <PageLoader />;
 
@@ -47,8 +95,8 @@ export function Recipes() {
           <p className="mt-3 text-sm font-600 text-forest">{preview > 0 ? `${preview} authentic Odia recipes waiting inside.` : ""}</p>
           <ul className="mt-5 space-y-2 text-sm text-charcoal/70">
             <li>• Traditional Odia cooking, grouped by breakfast, lunch, dinner and snacks</li>
-            <li>• Step-by-step methods, from chakuli pitha to chhena poda</li>
-            <li>• Nutrition notes, with the lighter dishes marked</li>
+            <li>• Festival collections — Raja, Pana Sankranti, Makar Sankranti, Lakshmi Puja</li>
+            <li>• Search by ingredient to find a use for whatever is already in your pantry</li>
             <li>• Save your favourite recipes to your account</li>
           </ul>
         </div>
@@ -58,9 +106,20 @@ export function Recipes() {
   );
 
   const all = recipes || [];
-  const shown = all.filter((r) => (meal === "All" || r.category === meal) && (!healthyOnly || r.healthy));
+  const activeFestival = festival ? FESTIVAL_COLLECTIONS.find((f) => f.key === festival) : null;
+  const shown = all.filter((r) =>
+    (meal === "All" || r.category === meal)
+    && (!healthyOnly || r.healthy)
+    && (!activeFestival || activeFestival.match(r))
+    && recipeMatchesTerm(r, query)
+  );
   const groups = meal === "All" ? MEAL_GROUPS : MEAL_GROUPS.filter(([k]) => k === meal);
-  const countFor = (k) => all.filter((r) => r.category === k && (!healthyOnly || r.healthy)).length;
+  const countFor = (k) => all.filter((r) =>
+    r.category === k
+    && (!healthyOnly || r.healthy)
+    && (!activeFestival || activeFestival.match(r))
+    && recipeMatchesTerm(r, query)
+  ).length;
 
   return (
     <Section>
@@ -68,6 +127,76 @@ export function Recipes() {
         <SectionHeading eyebrow="Odia Kitchen"
           title="Authentic Recipes from Odisha"
           sub="Only Odia cooking — the pitha, dalma, pakhala and besara that belong to this state, grouped by the meal they are actually eaten at." />
+
+        {/* FESTIVAL COLLECTIONS — only festivals with at least one real recipe appear here */}
+        {festivalCounts.length > 0 && (
+          <div className="mb-8" data-testid="festival-collections">
+            <div className="mb-3 flex items-end justify-between gap-3">
+              <div>
+                <p className="inline-flex items-center gap-1.5 text-xs font-700 uppercase tracking-widest text-amber">
+                  <Sparkles className="h-3.5 w-3.5" />Festival Collections
+                </p>
+                <h2 className="mt-1 font-serif text-xl text-charcoal">Cook with the Odia calendar</h2>
+              </div>
+              {activeFestival && (
+                <button onClick={() => setFestival(null)} data-testid="festival-clear"
+                  className="inline-flex items-center gap-1 rounded-full border border-sage/50 bg-white px-3 py-1 text-xs font-600 text-charcoal hover:bg-cream">
+                  <X className="h-3 w-3" />Clear festival
+                </button>
+              )}
+            </div>
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
+              {festivalCounts.map((f) => {
+                const on = festival === f.key;
+                return (
+                  <button key={f.key} onClick={() => setFestival(on ? null : f.key)}
+                    data-testid={`festival-chip-${f.key}`} aria-pressed={on}
+                    className={`group rounded-2xl border p-4 text-left transition-all duration-200 ${
+                      on ? "border-forest bg-forest text-cream shadow-[0_8px_22px_rgba(23,74,53,0.2)]"
+                         : "border-sage/40 bg-white hover:border-forest hover:-translate-y-0.5 hover:shadow-md"}`}>
+                    <p className={`text-[10px] font-700 uppercase tracking-widest ${on ? "text-amber" : "text-amber"}`}>{f.season}</p>
+                    <p className={`mt-1 font-serif text-lg leading-tight ${on ? "text-cream" : "text-charcoal"}`}>{f.name}</p>
+                    <p className={`text-xs italic ${on ? "text-cream/70" : "text-forest/70"}`}>Odia: {f.odia}</p>
+                    <p className={`mt-2 line-clamp-2 text-[11px] leading-relaxed ${on ? "text-cream/80" : "text-charcoal/60"}`}>{f.note}</p>
+                    <p className={`mt-2 text-[11px] font-700 ${on ? "text-amber" : "text-forest"}`}>{f.count} {f.count === 1 ? "recipe" : "recipes"} →</p>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* SEARCH BY INGREDIENT */}
+        <div className="mb-5 rounded-3xl border border-sage/30 bg-white p-4 shadow-sm" data-testid="recipe-search-panel">
+          <label htmlFor="recipe-ingredient-search" className="flex items-center gap-2 text-xs font-700 uppercase tracking-widest text-forest">
+            <Search className="h-3.5 w-3.5" />Find a recipe for what you already have
+          </label>
+          <div className="relative mt-2">
+            <input id="recipe-ingredient-search" type="search"
+              value={query} onChange={(e) => setQuery(e.target.value)}
+              placeholder="Try an ingredient — ragi, moong dal, mustard oil, jaggery…"
+              data-testid="recipe-ingredient-input"
+              className="w-full rounded-full border border-sage/50 bg-cream/40 px-5 py-2.5 pr-10 text-sm outline-none transition-colors focus:border-forest focus:bg-white" />
+            {query && (
+              <button onClick={() => setQuery("")} aria-label="Clear search" data-testid="recipe-search-clear"
+                className="absolute right-2 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-charcoal/50 hover:bg-cream hover:text-forest">
+                <X className="h-4 w-4" />
+              </button>
+            )}
+          </div>
+          <div className="mt-3 flex flex-wrap gap-1.5" data-testid="recipe-ingredient-chips">
+            {INGREDIENT_CHIPS.map((c) => {
+              const on = query.toLowerCase() === c;
+              return (
+                <button key={c} onClick={() => setQuery(on ? "" : c)} data-testid={`recipe-chip-${c.replace(/\s+/g, "-")}`}
+                  className={`rounded-full px-3 py-1 text-xs font-600 transition-colors ${
+                    on ? "bg-forest text-cream" : "bg-cream text-charcoal/70 ring-1 ring-sage/30 hover:bg-amber/20 hover:text-charcoal"}`}>
+                  {c}
+                </button>
+              );
+            })}
+          </div>
+        </div>
 
         {/* meal filter + healthy toggle */}
         <div className="mb-8 flex flex-wrap items-center gap-2" data-testid="recipe-filters">
@@ -77,7 +206,7 @@ export function Recipes() {
                 meal === k ? "bg-forest text-cream" : "bg-white text-charcoal ring-1 ring-sage/40 hover:bg-cream"}`}>
               {k === "All" ? "All meals" : k}
               <span className={`text-[11px] ${meal === k ? "text-cream/70" : "text-charcoal/45"}`}>
-                {k === "All" ? all.filter((r) => !healthyOnly || r.healthy).length : countFor(k)}
+                {k === "All" ? all.filter((r) => (!healthyOnly || r.healthy) && (!activeFestival || activeFestival.match(r)) && recipeMatchesTerm(r, query)).length : countFor(k)}
               </span>
             </button>
           ))}
@@ -88,9 +217,20 @@ export function Recipes() {
           </button>
         </div>
 
+        {activeFestival && (
+          <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-amber/15 px-4 py-1.5 text-xs font-600 text-charcoal" data-testid="festival-active-pill">
+            <Sparkles className="h-3.5 w-3.5 text-amber" />Showing {shown.length} {activeFestival.name} recipe{shown.length === 1 ? "" : "s"}
+          </p>
+        )}
+        {query && !activeFestival && (
+          <p className="mb-4 text-xs text-charcoal/55" data-testid="recipe-search-count">{shown.length} recipe{shown.length === 1 ? "" : "s"} match “{query}”</p>
+        )}
+
         {!recipes ? <GridSkeleton /> : shown.length === 0 ? (
           <p className="rounded-2xl border border-dashed border-sage/50 bg-white/50 py-14 text-center text-sm text-charcoal/55"
-            data-testid="recipes-empty">No recipes match this filter yet. Try a different meal or turn off the healthy-only filter.</p>
+            data-testid="recipes-empty">
+            {query ? `No recipes mention “${query}” yet. Try a shorter word or a different ingredient.` : "No recipes match this filter yet. Try a different meal or turn off the healthy-only filter."}
+          </p>
         ) : (
           <div className="space-y-14">
             {groups.map(([key, odia, blurb]) => {

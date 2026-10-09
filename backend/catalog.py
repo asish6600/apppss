@@ -100,10 +100,77 @@ def P(slug, name, cat, sub, mrp, pack, img, short, desc, ingredients, nutrition,
         "deal_start_at": None, "deal_end_at": None, "deal_badge": "", "deal_stock": None,
         "badges": (["Made in India"] + (["Farmer Sourced"] if farm else []) + (["Gluten-free"] if "Gluten-free" in dietary else [])),
         "recipe_slugs": list(recipes), "campaign_slug": LAUNCH if offer else None,
+        "odia_name": ODIA_NAMES.get(slug, ""),
         "seo_title": f"{name} ({pack}) | Buy Online at AaharNest",
         "seo_description": f"{short} {pack} pack. {ptype} from AaharNest — wholesome Indian organic food, delivered pan-India.",
-        "search_keywords": keywords or f"{name.lower()}, {sub.lower()}, organic {sub.lower()}",
+        "search_keywords": keywords or f"{name.lower()}, {sub.lower()}, organic {sub.lower()}" + (f", {ODIA_NAMES[slug].lower()}" if slug in ODIA_NAMES else ""),
     }
+
+
+# Romanised Odia name of each product, for shoppers who recognise the Odia term — not the
+# English or Hindi one — but cannot read the Odia script. Shown below the product name on
+# cards and the detail page, and included in search_keywords so a search for "mandia" or
+# "sorisha tela" surfaces the right product. Deliberately simple transliterations (no
+# diacritics) that match what Odia families actually write in English on shopping lists.
+ODIA_NAMES = {
+    # millets & grains
+    "organic-ragi-whole": "Mandia", "organic-foxtail-millet": "Kangu",
+    "organic-little-millet": "Suan", "organic-kodo-millet": "Kodua",
+    "organic-barnyard-millet": "Khira", "organic-bajra": "Bajra",
+    "organic-jowar": "Juar", "organic-brown-rice": "Chamua Chaula",
+    "organic-red-rice": "Rakta Chaula", "organic-quinoa": "Quinoa",
+    # pulses & dals
+    "organic-moong-dal": "Muga Dali", "organic-whole-green-moong": "Sabuta Muga",
+    "organic-masoor-dal": "Masur Dali", "organic-toor-dal": "Harada Dali",
+    "organic-chana-dal": "Buta Dali", "organic-urad-dal-whole": "Sabuta Biri",
+    "organic-kabuli-chana": "Kabuli Buta", "organic-rajma": "Rakta Rajma",
+    "organic-kala-chana": "Kala Buta",
+    # super seeds
+    "organic-chia-seeds": "Chia Munji", "organic-flax-seeds": "Tisi",
+    "organic-pumpkin-seeds": "Kakharu Munji", "organic-sunflower-seeds": "Suryamukhi Munji",
+    "organic-white-sesame-seeds": "Rasi (Till)", "organic-watermelon-seeds": "Tarbuja Munji",
+    "organic-basil-seeds": "Tulasi Munji (Sabja)",
+    # spices
+    "organic-turmeric-powder": "Haladi Guda", "organic-black-pepper-whole": "Golmaricha",
+    "organic-cumin-seeds": "Jeera", "organic-coriander-powder": "Dhania Guda",
+    "organic-fennel-seeds": "Pan Mahuri", "organic-fenugreek-seeds": "Methi",
+    "organic-green-cardamom": "Alaichi", "organic-cinnamon-sticks": "Dalchini",
+    "organic-cloves": "Labanga", "organic-red-chilli-powder": "Lanka Guda",
+    # oils
+    "cold-pressed-mustard-oil": "Sorisha Tela", "cold-pressed-groundnut-oil": "China Badam Tela",
+    "cold-pressed-sesame-oil": "Rasi Tela", "cold-pressed-coconut-oil": "Nadia Tela",
+    "cold-pressed-sunflower-oil": "Suryamukhi Tela",
+    # sweeteners
+    "organic-jaggery-block": "Guda", "organic-jaggery-powder": "Guda Churna",
+    "organic-coconut-sugar": "Nadia Chini", "organic-date-sugar": "Khajura Chini",
+    # tea
+    "organic-green-tea": "Sabuja Cha", "organic-tulsi-tea": "Tulasi Cha",
+    "organic-masala-chai": "Masala Cha", "organic-darjeeling-tea": "Darjeeling Cha",
+    # nuts
+    "organic-almonds": "Badam", "organic-walnuts": "Akhrota",
+    "organic-cashews": "Kaju", "organic-peanuts": "China Badam",
+    # flours
+    "organic-ragi-flour": "Mandia Pithau", "organic-jowar-flour": "Juar Pithau",
+    "organic-bajra-flour": "Bajra Pithau", "organic-besan": "Buta Pithau (Besan)",
+    "organic-multigrain-flour": "Mishrita Atta", "organic-buckwheat-flour": "Kuttu Pithau",
+    # breakfast
+    "organic-rolled-oats": "Oats", "organic-millet-dalia": "Milet Dalia",
+    "organic-ragi-porridge-mix": "Mandia Jau", "organic-muesli": "Muesli",
+    "organic-poha": "Chuda", "organic-sattu": "Chatua",
+    # snacks
+    "organic-ragi-cookies": "Mandia Biscuit", "organic-millet-cookies": "Milet Biscuit",
+    "organic-roasted-makhana": "Bhuja Makhana", "organic-roasted-chana": "Bhuja Buta",
+    "organic-seed-mix": "Munji Mishrana", "organic-millet-puffs": "Milet Mudhi",
+    # coconut
+    "organic-desiccated-coconut": "Suka Nadia", "organic-coconut-flour": "Nadia Pithau",
+    "organic-coconut-chips": "Nadia Chips",
+    # masala blends
+    "organic-garam-masala": "Garam Masala", "organic-sambar-powder": "Sambar Guda",
+    "organic-chana-masala": "Chole Masala", "organic-chaat-masala": "Chaat Masala",
+    # wellness
+    "organic-moringa-powder": "Sajana Patra Churna", "organic-amla-powder": "Anla Churna",
+    "organic-wheatgrass-powder": "Wheatgrass Churna", "organic-ashwagandha-powder": "Aswagandha Churna",
+}
 
 
 VG, GF, HP, HF, NS = "Vegan", "Gluten-free", "High Protein", "High Fibre", "No Added Sugar"
@@ -436,6 +503,7 @@ def build_products() -> list[dict]:
             "is_todays_deal": False, "deal_visible": False, "deal_order": 0, "deal_price": None, "deal_discount": 0,
             "deal_start_at": None, "deal_end_at": None, "deal_badge": "", "deal_stock": None,
             "badges": ["Combo Box", "Made in India"], "recipe_slugs": recipes, "campaign_slug": None,
+            "odia_name": "",
             "seo_title": f"{name} | Combo Box at AaharNest", "seo_description": f"{short} Save ₹{pr['savings']} vs buying separately.",
             "search_keywords": f"{name.lower()}, combo, bundle, gift box, " + ", ".join(by_slug[s]["name"].lower() for s, _ in items),
         })

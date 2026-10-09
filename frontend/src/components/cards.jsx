@@ -129,6 +129,7 @@ export function ProductCard({ p }) {
         {/* Sourcing is Odisha-only for now, so no place name is shown on products — brand line only. */}
         <p className="text-[11px] uppercase leading-tight tracking-wider text-charcoal/45">{p.brand || "AaharNest"}</p>
         <LangLink to={`/product/${p.slug}`}><h3 className="line-clamp-2 font-600 leading-snug text-charcoal">{p.name}</h3></LangLink>
+        {p.odia_name && <p className="font-serif text-xs italic leading-tight text-forest/80" data-testid={`product-odia-name-${p.slug}`}>Odia: {p.odia_name}</p>}
         {p.short_description && <p className="line-clamp-1 text-xs text-charcoal/55" data-testid={`product-descriptor-${p.slug}`}>{p.short_description}</p>}
         <div className="flex items-center gap-2"><Stars value={rating} count={reviews} noRatingsLabel={t("common.noRatings")} /></div>
         <p className="text-xs font-600 text-charcoal/65">{p.pack_size}</p>
